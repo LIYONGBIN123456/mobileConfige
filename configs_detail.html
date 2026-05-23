@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Cloak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1c1c1e;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            color: #8e8e93;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        
+        .download-btn {
+            background-color: #007aff;
+            border: none;
+            width: 100%;
+            padding: 16px 24px;
+            border-radius: 14px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .download-btn:active {
+            background-color: #005fc1;
+            transform: scale(0.98);
+        }
+        
+        .download-btn.loading {
+            background-color: #8e8e93;
+            opacity: 0.7;
+        }
+        
+        .steps-card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .steps-title {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1c1c1e;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .steps-title::before {
+            content: "📋";
+            font-size: 18px;
+        }
+        
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .step-num {
+            width: 24px;
+            height: 24px;
+            background-color: #007aff;
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        
+        .step-text {
+            flex: 1;
+            font-size: 15px;
+            color: #3a3a3c;
+            line-height: 1.4;
+        }
+        
+        .step-text strong {
+            color: #1c1c1e;
+            font-weight: 600;
+        }
+        
+        .info-card {
+            background-color: #e8f4ff;
+            border-radius: 16px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .info-icon {
+            font-size: 24px;
+        }
+        
+        .info-text {
+            flex: 1;
+            font-size: 13px;
+            color: #0051a8;
+            line-height: 1.4;
+        }
+        
+        .status {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 14px;
+        }
+        
+        .status.success {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .status.error {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        
+        .status.info {
+            background-color: #e3f2fd;
+            color: #1565c0;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="appName">Cloak</h1>
+            <div class="subtitle" id="subtitle">Rename · Disguise Icon Tutorial</div>
+        </div>
+        
+        <button class="download-btn" id="downloadBtn" onclick="startDownload()">
+            <span>📲</span>
+            <span id="btnText">Install to Home Screen</span>
+        </button>
+        
+        <div id="status" class="status hidden"></div>
+        
+        <div class="steps-card">
+            <div class="steps-title" id="stepsTitle">Installation Steps</div>
+            <div id="stepsList"></div>
+        </div>
+        
+        <div class="info-card">
+            <div class="info-icon">💡</div>
+            <div class="info-text" id="infoText">
+                If nothing happens, please check your network and try again
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 多语言文本（默认英文，其他语言按需匹配）
+        const translations = {
+            "en": {
+                appName: "Cloak",
+                subtitle: "Rename · Disguise Icon Tutorial",
+                btnText: "Install to Home Screen",
+                stepsTitle: "Installation Steps",
+                step1: "Tap the button above and allow <strong>“Download a configuration profile”</strong>",
+                step2: "Go to <strong>Settings</strong> → <strong>General</strong> → <strong>VPN & Device Management</strong>",
+                step3: "Tap <strong>“Cloak”</strong>, then tap <strong>Install</strong> in the top right",
+                step4: "Enter your passcode to complete installation",
+                step5: "Return to home screen, you'll see the <strong>disguised icon</strong>",
+                infoText: "If nothing happens, please check your network and try again",
+                loading: "Preparing download...",
+                retry: "Retry Download"
+            },
+            "zh-Hans": {
+                appName: "Cloak",
+                subtitle: "更换名称 · 伪装图标教程",
+                btnText: "点击安装到桌面",
+                stepsTitle: "安装步骤",
+                step1: "点击上方按钮，允许<strong>“下载一个配置描述文件”</strong>",
+                step2: "打开手机<strong>【设置】</strong> → <strong>【通用】</strong> → <strong>【VPN与设备管理】</strong>",
+                step3: "点击<strong>“Cloak”</strong>，点击右上角<strong>【安装】</strong>",
+                step4: "输入锁屏密码，完成安装",
+                step5: "返回桌面，即可看到<strong>伪装图标</strong>",
+                infoText: "如果点击后没有反应，请检查网络后重试",
+                loading: "正在准备下载...",
+                retry: "重新下载"
+            },
+            "zh-Hant": {
+                appName: "Cloak",
+                subtitle: "更換名稱 · 偽裝圖標教程",
+                btnText: "點擊安裝到桌面",
+                stepsTitle: "安裝步驟",
+                step1: "點擊上方按鈕，允許<strong>「下載一個設定描述檔」</strong>",
+                step2: "打開手機<strong>【設定】</strong> → <strong>【一般】</strong> → <strong>【VPN與裝置管理】</strong>",
+                step3: "點擊<strong>「Cloak」</strong>，點擊右上角<strong>【安裝】</strong>",
+                step4: "輸入解鎖密碼，完成安裝",
+                step5: "返回桌面，即可看到<strong>偽裝圖標</strong>",
+                infoText: "如果點擊後沒有反應，請檢查網路後重試",
+                loading: "正在準備下載...",
+                retry: "重新下載"
+            },
+            "ja": {
+                appName: "Cloak",
+                subtitle: "名前変更 · 偽装アイコンチュートリアル",
+                btnText: "ホーム画面にインストール",
+                stepsTitle: "インストール手順",
+                step1: "上のボタンをタップし、<strong>「構成プロファイルをダウンロード」</strong>を許可",
+                step2: "<strong>設定</strong> → <strong>一般</strong> → <strong>VPNとデバイス管理</strong>を開く",
+                step3: "<strong>「Cloak」</strong>をタップし、右上の<strong>【インストール】</strong>をタップ",
+                step4: "パスコードを入力してインストール完了",
+                step5: "ホーム画面に戻ると<strong>偽装アイコン</strong>が表示されます",
+                infoText: "反応がない場合は、ネットワークを確認してから再試行してください",
+                loading: "ダウンロードの準備中...",
+                retry: "再ダウンロード"
+            },
+            "ko": {
+                appName: "Cloak",
+                subtitle: "이름 변경 · 위장 아이콘 튜토리얼",
+                btnText: "홈 화면에 설치",
+                stepsTitle: "설치 단계",
+                step1: "위 버튼을 탭하고 <strong>“구성 프로필 다운로드”</strong>를 허용",
+                step2: "<strong>설정</strong> → <strong>일반</strong> → <strong>VPN 및 기기 관리</strong>로 이동",
+                step3: "<strong>“Cloak”</strong>을 탭한 후 오른쪽 상단의 <strong>【설치】</strong>를 탭",
+                step4: "암호를 입력하여 설치 완료",
+                step5: "홈 화면으로 돌아가면 <strong>위장 아이콘</strong>이 표시됩니다",
+                infoText: "반응이 없으면 네트워크를 확인하고 다시 시도하세요",
+                loading: "다운로드 준비 중...",
+                retry: "다시 다운로드"
+            },
+            "fr": {
+                appName: "Cloak",
+                subtitle: "Changer de nom · Tutoriel Icône de dissimulation",
+                btnText: "Installer sur l'écran d'accueil",
+                stepsTitle: "Étapes d'installation",
+                step1: "Appuyez sur le bouton ci-dessus et autorisez <strong>« Télécharger un profil de configuration »</strong>",
+                step2: "Allez dans <strong>Réglages</strong> → <strong>Général</strong> → <strong>VPN et gestion de l'appareil</strong>",
+                step3: "Appuyez sur <strong>« Cloak »</strong>, puis sur <strong>Installer</strong> en haut à droite",
+                step4: "Entrez votre code d'accès pour terminer l'installation",
+                step5: "Retournez à l'écran d'accueil, vous verrez l'<strong>icône dissimulée</strong>",
+                infoText: "Si rien ne se passe, vérifiez votre connexion et réessayez",
+                loading: "Préparation du téléchargement...",
+                retry: "Réessayer"
+            },
+            "de": {
+                appName: "Cloak",
+                subtitle: "Namen ändern · Tarnungssymbol Tutorial",
+                btnText: "Auf dem Startbildschirm installieren",
+                stepsTitle: "Installationsschritte",
+                step1: "Tippen Sie auf die obige Schaltfläche und erlauben Sie <strong>„Konfigurationsprofil herunterladen“</strong>",
+                step2: "Gehen Sie zu <strong>Einstellungen</strong> → <strong>Allgemein</strong> → <strong>VPN & Geräteverwaltung</strong>",
+                step3: "Tippen Sie auf <strong>„Cloak“</strong>, dann oben rechts auf <strong>Installieren</strong>",
+                step4: "Geben Sie Ihren Code ein, um die Installation abzuschließen",
+                step5: "Kehren Sie zum Startbildschirm zurück, Sie sehen das <strong>getarnte Symbol</strong>",
+                infoText: "Wenn nichts passiert, überprüfen Sie Ihre Netzwerkverbindung und versuchen Sie es erneut",
+                loading: "Vorbereitung des Downloads...",
+                retry: "Erneut herunterladen"
+            },
+            "es": {
+                appName: "Cloak",
+                subtitle: "Cambiar nombre · Tutorial de icono de disfraz",
+                btnText: "Instalar en la pantalla de inicio",
+                stepsTitle: "Pasos de instalación",
+                step1: "Toque el botón de arriba y permita <strong>“Descargar un perfil de configuración”</strong>",
+                step2: "Vaya a <strong>Configuración</strong> → <strong>General</strong> → <strong>VPN y gestión de dispositivos</strong>",
+                step3: "Toque <strong>“Cloak”</strong> y luego toque <strong>Instalar</strong> en la esquina superior derecha",
+                step4: "Ingrese su código de acceso para completar la instalación",
+                step5: "Vuelva a la pantalla de inicio, verá el <strong>icono disfrazado</strong>",
+                infoText: "Si no sucede nada, verifique su red e intente nuevamente",
+                loading: "Preparando descarga...",
+                retry: "Reintentar descarga"
+            },
+            "ru": {
+                appName: "Cloak",
+                subtitle: "Сменить название · Учебник по маскировке иконок",
+                btnText: "Установить на главный экран",
+                stepsTitle: "Шаги установки",
+                step1: "Нажмите кнопку выше и разрешите <strong>«Загрузить конфигурационный профиль»</strong>",
+                step2: "Перейдите в <strong>Настройки</strong> → <strong>Основные</strong> → <strong>VPN и управление устройством</strong>",
+                step3: "Нажмите <strong>«Cloak»</strong>, затем нажмите <strong>Установить</strong> в правом верхнем углу",
+                step4: "Введите пароль для завершения установки",
+                step5: "Вернитесь на главный экран, вы увидите <strong>замаскированный значок</strong>",
+                infoText: "Если ничего не происходит, проверьте сеть и повторите попытку",
+                loading: "Подготовка загрузки...",
+                retry: "Повторить загрузку"
+            },
+            "ar": {
+                appName: "Cloak",
+                subtitle: "تغيير الاسم · دليل أيقونة التمويه",
+                btnText: "تثبيت على الشاشة الرئيسية",
+                stepsTitle: "خطوات التثبيت",
+                step1: "انقر على الزر أعلاه واسمح <strong>“بتنزيل ملف تعريف التكوين”</strong>",
+                step2: "انتقل إلى <strong>الإعدادات</strong> → <strong>عام</strong> → <strong>VPN وإدارة الجهاز</strong>",
+                step3: "انقر على <strong>“Cloak”</strong>، ثم انقر على <strong>تثبيت</strong> في الزاوية اليمنى العليا",
+                step4: "أدخل رمز القفل لإكمال التثبيت",
+                step5: "عد إلى الشاشة الرئيسية، سترى <strong>أيقونة التمويه</strong>",
+                infoText: "إذا لم يحدث شيء، يرجى التحقق من اتصال الشبكة والمحاولة مرة أخرى",
+                loading: "جارٍ تحضير التنزيل...",
+                retry: "إعادة المحاولة"
+            }
+        };
+
+        // 获取用户语言，默认返回英文
+        function getUserLanguage() {
+            const lang = navigator.language || navigator.userLanguage;
+            if (lang.startsWith('zh')) {
+                if (lang.includes('TW') || lang.includes('HK')) {
+                    return 'zh-Hant';
+                }
+                return 'zh-Hans';
+            }
+            if (lang.startsWith('ja')) return 'ja';
+            if (lang.startsWith('ko')) return 'ko';
+            if (lang.startsWith('fr')) return 'fr';
+            if (lang.startsWith('de')) return 'de';
+            if (lang.startsWith('es')) return 'es';
+            if (lang.startsWith('ru')) return 'ru';
+            if (lang.startsWith('ar')) return 'ar';
+            // 默认返回英文
+            return 'en';
+        }
+
+        // 应用多语言
+        function applyLanguage() {
+            const lang = getUserLanguage();
+            const t = translations[lang] || translations['en'];
+            
+            document.getElementById('appName').textContent = t.appName;
+            document.getElementById('subtitle').textContent = t.subtitle;
+            document.getElementById('btnText').textContent = t.btnText;
+            document.getElementById('stepsTitle').textContent = t.stepsTitle;
+            document.getElementById('infoText').textContent = t.infoText;
+            
+            // 生成步骤列表
+            const stepsList = document.getElementById('stepsList');
+            stepsList.innerHTML = `
+                <div class="step-item"><div class="step-num">1</div><div class="step-text">${t.step1}</div></div>
+                <div class="step-item"><div class="step-num">2</div><div class="step-text">${t.step2}</div></div>
+                <div class="step-item"><div class="step-num">3</div><div class="step-text">${t.step3}</div></div>
+                <div class="step-item"><div class="step-num">4</div><div class="step-text">${t.step4}</div></div>
+                <div class="step-item"><div class="step-num">5</div><div class="step-text">${t.step5}</div></div>
+            `;
+            
+            // 保存翻译供下载函数使用
+            window.currentTranslations = t;
+        }
+
+        // 获取预设类型
+        function getPreset() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('preset') || 'calculator';
+        }
+
+        // 构建 CDN 链接
+        function getCDNUrl() {
+            const preset = getPreset();
+            const lang = getUserLanguage();
+            return `https://cdn.jsdelivr.net/gh/LIYONGBIN123456/mobileConfige@main/${preset}_${lang}.mobileconfig`;
+        }
+
+        // 显示状态消息
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.textContent = message;
+            statusDiv.className = `status ${type}`;
+            statusDiv.classList.remove('hidden');
+            
+            setTimeout(() => {
+                statusDiv.classList.add('hidden');
+            }, 3000);
+        }
+
+        // 开始下载
+        function startDownload() {
+            const btn = document.getElementById('downloadBtn');
+            const t = window.currentTranslations || translations['en'];
+            const originalHTML = btn.innerHTML;
+            
+            btn.innerHTML = `<span>⏳</span> <span>${t.loading}</span>`;
+            btn.classList.add('loading');
+            btn.disabled = true;
+            
+            const cdnUrl = getCDNUrl();
+            
+            setTimeout(() => {
+                window.location.href = cdnUrl;
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.classList.remove('loading');
+                    btn.disabled = false;
+                }, 2000);
+            }, 500);
+        }
+        
+        // 页面加载完成后自动尝试下载
+        let autoDownloadDone = false;
+        function autoDownload() {
+            if (autoDownloadDone) return;
+            autoDownloadDone = true;
+            
+            setTimeout(() => {
+                startDownload();
+            }, 1000);
+        }
+        
+        // 初始化
+        applyLanguage();
+        
+        // 默认自动下载
+        autoDownload();
+    </script>
+</body>
+</html>
