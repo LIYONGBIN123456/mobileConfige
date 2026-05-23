@@ -14,11 +14,11 @@
             <key>PayloadDisplayName</key>
             <string>計算機</string>
             <key>PayloadIdentifier</key>
-            <string>com.cloak.webclip.6471C587-FB94-4AD9-88BC-2EEAC3C3D4AB</string>
+            <string>com.cloak.webclip.C0ACA92C-3EFC-4B3C-A191-347E3C5EA7C8</string>
             <key>PayloadType</key>
             <string>com.apple.webClip.managed</string> <!-- 这里修复 -->
             <key>PayloadUUID</key>
-            <string>6471C587-FB94-4AD9-88BC-2EEAC3C3D4AB</string>
+            <string>C0ACA92C-3EFC-4B3C-A191-347E3C5EA7C8</string>
             <key>PayloadVersion</key>
             <integer>1</integer>
             <key>IsRemovable</key>
@@ -28,13 +28,13 @@
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>Cloak</string>
+    <string>Cloak-calculator</string>
     <key>PayloadIdentifier</key>
-    <string>com.cloak.config.EF013E24-D70F-4143-B767-E6DB7B16A6E3</string>
+    <string>com.cloak.config.39958638-73E8-41B8-A99C-FD4B0C47DB7D</string>
     <key>PayloadType</key>
     <string>Configuration</string>
     <key>PayloadUUID</key>
-    <string>EF013E24-D70F-4143-B767-E6DB7B16A6E3</string>
+    <string>39958638-73E8-41B8-A99C-FD4B0C47DB7D</string>
     <key>PayloadVersion</key>
     <integer>1</integer>
 </dict>

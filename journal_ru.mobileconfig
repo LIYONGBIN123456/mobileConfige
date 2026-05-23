@@ -14,11 +14,11 @@
             <key>PayloadDisplayName</key>
             <string>Дневник</string>
             <key>PayloadIdentifier</key>
-            <string>com.cloak.webclip.08AD8478-962A-4A57-BAED-072C4B3F93AE</string>
+            <string>com.cloak.webclip.152B7997-7450-444A-B7F0-C062A5B36A0D</string>
             <key>PayloadType</key>
             <string>com.apple.webClip.managed</string> <!-- 这里修复 -->
             <key>PayloadUUID</key>
-            <string>08AD8478-962A-4A57-BAED-072C4B3F93AE</string>
+            <string>152B7997-7450-444A-B7F0-C062A5B36A0D</string>
             <key>PayloadVersion</key>
             <integer>1</integer>
             <key>IsRemovable</key>
@@ -28,13 +28,13 @@
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>Cloak</string>
+    <string>Cloak-journal</string>
     <key>PayloadIdentifier</key>
-    <string>com.cloak.config.69E6CC51-9A75-448E-A9B8-37C1196A1CCA</string>
+    <string>com.cloak.config.90C26884-28ED-42B1-813E-AA0084FB2B3A</string>
     <key>PayloadType</key>
     <string>Configuration</string>
     <key>PayloadUUID</key>
-    <string>69E6CC51-9A75-448E-A9B8-37C1196A1CCA</string>
+    <string>90C26884-28ED-42B1-813E-AA0084FB2B3A</string>
     <key>PayloadVersion</key>
     <integer>1</integer>
 </dict>
