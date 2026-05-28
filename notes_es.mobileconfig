@@ -14,27 +14,27 @@
             <key>PayloadDisplayName</key>
             <string>Notas</string>
             <key>PayloadIdentifier</key>
-            <string>com.cloak.webclip.C1C2405D-628F-42E1-BA16-F69BAA1F14C1</string>
+            <string>com.cloak.webclip.single</string>
             <key>PayloadType</key>
-            <string>com.apple.webClip.managed</string> <!-- 这里修复 -->
+            <string>com.apple.webClip.managed</string>
             <key>PayloadUUID</key>
-            <string>C1C2405D-628F-42E1-BA16-F69BAA1F14C1</string>
+            <string>26BF4995-921B-43FC-98FB-1816AA11D4C5</string>
             <key>PayloadVersion</key>
             <integer>1</integer>
             <key>IsRemovable</key>
-            <true/> <!-- 必须加 -->
+            <true/>
             <key>URL</key>
             <string>cloak://</string>
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>Cloak-notes</string>
+    <string>Cloak</string>
     <key>PayloadIdentifier</key>
-    <string>com.cloak.config.D135A0F4-7A82-44DC-80B1-7978F71BE761</string>
+    <string>com.cloak.main.config</string>
     <key>PayloadType</key>
     <string>Configuration</string>
     <key>PayloadUUID</key>
-    <string>D135A0F4-7A82-44DC-80B1-7978F71BE761</string>
+    <string>88888888-7777-6666-5555-444444444444</string>
     <key>PayloadVersion</key>
     <integer>1</integer>
 </dict>
