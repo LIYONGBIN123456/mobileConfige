@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>隐私政策 - Cloak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 48px 56px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .update-date {
+            text-align: center;
+            color: #86868b;
+            font-size: 15px;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f2;
+            letter-spacing: -0.3px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 22px;
+            margin-bottom: 8px;
+            letter-spacing: -0.2px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 14px;
+            color: #1d1d1f;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        ul li {
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: #1d1d1f;
+            list-style-type: disc;
+        }
+
+        ul li ul {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            padding-left: 20px;
+        }
+
+        ul li ul li {
+            list-style-type: circle;
+            font-size: 14px;
+        }
+
+        .highlight-box {
+            background: #f8f8fa;
+            border-left: 4px solid #7469f5;
+            padding: 14px 20px;
+            margin: 16px 0;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #1d1d1f;
+        }
+
+        .highlight-box strong {
+            color: #7469f5;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e5ea;
+            margin: 32px 0;
+        }
+
+        .contact {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+
+        .contact p {
+            margin-bottom: 4px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #34c759;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-right: 6px;
+        }
+
+        .badge-warn {
+            background: #ff9500;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 20px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            ul li {
+                font-size: 14px;
+            }
+
+            .highlight-box {
+                padding: 12px 16px;
+                font-size: 14px;
+            }
+
+            .contact {
+                padding: 16px 18px;
+            }
+        }
+
+        /* 打印样式 */
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 40px 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ====== 一、前言 ====== -->
+        <h2>一、前言</h2>
+
+        <p>本隐私政策适用于 <strong>Cloak</strong> 应用（下称「本 App」），一款基于 Apple 官方 FamilyControls、DeviceActivity、ManagedSettings 框架开发的本地应用管控工具，提供应用隐藏、定时锁定、每日使用时长限额、桌面图标伪装、分组管理、VIP 订阅解锁全功能等服务。</p>
+
+        <p>我们严格遵循《中华人民共和国网络安全法》《数据安全法》《个人信息保护法》《未成年人网络保护条例》以及 App Store 平台隐私规范、GDPR、CCPA 等全球通用隐私法规。</p>
+
+        <div class="highlight-box">
+            <strong>🔒 本 App 无自有云端服务器</strong>，不上传任何用户本地数据，不采集个人身份信息，未集成任何第三方广告 / 统计 / 埋点 SDK，全部业务逻辑仅在您设备本地运行。
+        </div>
+
+        <p>您下载、安装、打开、使用本 App，即视为已完整阅读、充分理解并自愿同意本隐私政策全部条款；若您不认可本政策任意内容，请立即卸载本 App，停止一切使用行为。</p>
+
+        <!-- ====== 二、我们不会主动收集的信息 ====== -->
+        <h2>二、我们不会主动收集的信息</h2>
+
+        <p>本 App 全程不会通过任何代码、SDK 或埋点方式主动获取、传输以下数据，不存在对外分发、出售、出租用户信息行为：</p>
+
+        <ul>
+            <li><strong>身份类信息：</strong>姓名、手机号、邮箱、身份证件、社交账号、住址等个人身份标识；</li>
+            <li><strong>支付信息：</strong>银行卡号、支付密码、Apple ID 账号密码、支付账单明细；</li>
+            <li><strong>设备追踪标识：</strong>IDFA、设备序列号、IMEI 等唯一硬件识别码；</li>
+            <li><strong>位置信息：</strong>GPS 定位、出行轨迹；</li>
+            <li><strong>用户内容：</strong>相册、通讯录、短信、聊天记录、本地文件；</li>
+            <li><strong>第三方 App 内部数据：</strong>被管控应用的内容数据；</li>
+            <li><strong>网络行为：</strong>浏览记录、搜索记录；</li>
+            <li><strong>诊断与埋点数据：</strong>崩溃日志、使用行为统计、点击热力图等。</li>
+        </ul>
+
+        <p>本 App 未集成任何第三方统计、广告、推送、埋点 SDK，不存在第三方主动或被动获取本地数据的通道。</p>
+
+        <!-- ====== 三、仅在本地存储的必要数据 ====== -->
+        <h2>三、仅在本地存储的必要数据</h2>
+
+        <p>为实现管控核心功能，本 App 仅在您设备本地沙盒及 App Group 共享容器内存储配置数据，<strong>无云端同步、无远程备份，仅本机可见</strong>。卸载 App 时全部数据自动永久清除。</p>
+
+        <h3>1. 应用管控分组配置</h3>
+        <ul>
+            <li><strong>存储内容：</strong>您创建的隐藏 / 锁定分组名称、勾选的应用匿名标识（Token）、定时起止时间、每周重复规则、每日使用时长限额、分组开关状态。</li>
+            <li><strong>用途：</strong>实现应用定时 / 时长隐藏、锁定管控核心功能。</li>
+        </ul>
+
+        <h3>2. 桌面伪装配置</h3>
+        <ul>
+            <li><strong>存储内容：</strong>您主动选择的 Alternate Icon 标识。</li>
+            <li><strong>用途：</strong>更换本 App 桌面图标显示样式。</li>
+        </ul>
+
+        <h3>3. 屏幕使用本地统计数据</h3>
+        <ul>
+            <li><strong>存储内容：</strong>iOS 系统 DeviceActivity API 返回的本地各应用使用时长。</li>
+            <li><strong>用途：</strong>首页展示本机应用使用统计，仅本地渲染，不向外传输。</li>
+        </ul>
+
+        <h3>4. 订阅权益匿名凭证</h3>
+        <ul>
+            <li><strong>存储内容：</strong>Apple 交易系统回传的原始交易标识符（original_transaction_id）、订阅到期时间、订阅周期标识。</li>
+            <li><strong>用途：</strong>仅用于本地校验当前设备 VIP 权益有效性、防止本地篡改订阅状态，绝不用于用户追踪、用户画像或第三方共享。</li>
+        </ul>
+
+        <div class="highlight-box">
+            <strong>📌 特别说明：</strong>本 App 不存储您的 Apple ID 账号、姓名、支付卡号、收货地址等可定位个人身份的信息。所有支付扣费由 Apple 官方 App Store 独立处理。
+        </div>
+
+        <!-- ====== 四、App 内购与 VIP 订阅说明 ====== -->
+        <h2>四、App 内购与 VIP 订阅说明</h2>
+
+        <h3>支付流程完全由 Apple 管控</h3>
+        <p>所有 VIP 订阅扣费、自动续费均在 App Store 系统内完成，本 App 无法介入支付环节，不会收集、存储银行卡号、支付密码、Apple ID 账号等支付隐私信息。</p>
+
+        <h3>订阅权益绑定设备</h3>
+        <p>VIP 订阅权益通过 Apple 交易标识绑定当前设备。重装 App 或更换设备后，您需通过 Apple ID 恢复购买，本 App 本身不存储个人账号信息，亦无法跨设备同步订阅状态。</p>
+
+        <h3>自动续费管理</h3>
+        <p>订阅自动续费由 Apple 账户独立控制，您可随时前往「iPhone 设置 &gt; Apple ID &gt; 订阅项目」关闭自动续费，关闭后订阅到期不再自动扣费。</p>
+
+        <h3>订阅数据清除</h3>
+        <p>卸载 App 后本地存储的订阅凭证全部永久清除，无法恢复。</p>
+
+        <!-- ====== 五、所需系统权限说明 ====== -->
+        <h2>五、所需系统权限说明</h2>
+
+        <p>所有权限均为实现核心管控功能所必需，关闭对应权限后相关功能直接失效。</p>
+
+        <h3>1. 屏幕使用时间权限（FamilyControls）</h3>
+        <p><strong>用途：</strong>读取应用匿名标识、实现应用隐藏 / 定时锁定 / 时长限额管控。仅获取应用无身份标识，无法读取任何 App 内部内容。</p>
+
+        <h3>2. 通知权限</h3>
+        <p><strong>用途：</strong>管控规则生效提醒、使用时长超限提醒。可随时在系统设置中关闭。</p>
+
+        <h3>3. 桌面图标更换权限（Alternate Icon API）</h3>
+        <p><strong>用途：</strong>通过 iOS 官方 API，在用户主动选择后更换本 App 桌面图标。仅修改本 App 自身显示样式，不修改其他任何应用。用户可随时在系统设置中恢复默认图标。</p>
+
+        <!-- ====== 六、您的法定隐私权利 ====== -->
+        <h2>六、您的法定隐私权利</h2>
+
+        <p>依据《个人信息保护法》、CCPA、GDPR 等相关法规，您享有以下权利：</p>
+
+        <ul>
+            <li><strong>知情权：</strong>可随时在本隐私政策查阅全部数据处理规则；</li>
+            <li><strong>删除权：</strong>支持应用内清空分组配置，卸载 App 即可彻底删除全部本地数据；</li>
+            <li><strong>撤回授权权：</strong>随时在 iPhone 系统设置中关闭本 App 任意权限，停止对应数据读取；</li>
+            <li><strong>咨询权：</strong>可通过文末联系方式咨询数据相关疑问。</li>
+        </ul>
+
+        <p>本 App 无需注册登录，不存在个人账号体系，无账号注销流程。</p>
+
+        <!-- ====== 七、数据共享与第三方说明 ====== -->
+        <h2>七、数据共享与第三方说明</h2>
+
+        <ul>
+            <li>本 App 无自有云端服务器，不存在用户数据对外传输通道；</li>
+            <li>绝不向广告商、数据分析公司、第三方平台出售、交换、出租任何本地配置数据；</li>
+            <li>仅依赖 Apple 官方 App Store 处理订阅支付，Apple 数据处理遵循《Apple 隐私政策》，与本 App 数据体系完全隔离；</li>
+            <li>未集成任何第三方 SDK（统计、广告、推送、埋点、支付 SDK），无第三方获取本机数据渠道。</li>
+        </ul>
+
+        <!-- ====== 八、未成年人信息保护 ====== -->
+        <h2>八、未成年人信息保护</h2>
+
+        <p>本 App 面向全年龄段用户，不会主动收集未成年人任何个人信息。若监护人使用本 App 管控未成年人设备，所有管控配置仅保存在监护人设备本地，不存在儿童行为数据上传或云端存储行为。未成年人使用前建议由监护人陪同完整阅读本隐私政策。</p>
+
+        <!-- ====== 九、争议解决 ====== -->
+        <h2>九、争议解决</h2>
+
+        <p>因本隐私政策或本 App 使用行为引发的任何争议，双方应首先友好协商解决；协商不成的，任何一方均可将争议提交至本 App 运营者所在地有管辖权的人民法院诉讼解决。</p>
+
+        <!-- ====== 十、隐私政策更新 ====== -->
+        <h2>十、隐私政策更新</h2>
+
+        <p>我们可能根据国家法律法规修订、App Store 审核规则更新、产品功能迭代等情况更新本隐私政策。更新后将在 App 内弹窗提示，您继续使用 App 即视为同意更新后的全部条款。最新版本同步发布至 App Store 产品页。</p>
+
+        <!-- ====== 十一、联系我们 ====== -->
+        <h2>十一、联系我们</h2>
+
+        <div class="contact">
+            <p>若您对本隐私政策、本地数据处理、订阅相关问题存在任何疑问，可通过以下方式联系我们：</p>
+            <p style="margin-top:8px;"><strong>📧 邮箱：</strong> yong_bin123@126.com</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <p style="text-align:center;font-size:13px;color:#86868b;">
+            Cloak · 本地优先 · 隐私至上
+        </p>
+
+    </div>
+
+</body>
+</html>
