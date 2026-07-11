@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>使用者服務條款 · Cloak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 48px 56px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .update-date {
+            text-align: center;
+            color: #86868b;
+            font-size: 15px;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f2;
+            letter-spacing: -0.3px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            letter-spacing: -0.2px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 14px;
+        }
+
+        ul li {
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: #1d1d1f;
+            list-style-type: disc;
+        }
+
+        ul li ul {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            padding-left: 20px;
+        }
+
+        ul li ul li {
+            list-style-type: circle;
+            font-size: 14px;
+        }
+
+        .highlight-box {
+            background: #f8f8fa;
+            border-left: 4px solid #7469f5;
+            padding: 14px 20px;
+            margin: 16px 0;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #1d1d1f;
+        }
+
+        .highlight-box strong {
+            color: #7469f5;
+        }
+
+        .tag-free {
+            display: inline-block;
+            background: #e5e5ea;
+            color: #1d1d1f;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-right: 4px;
+        }
+
+        .tag-vip {
+            display: inline-block;
+            background: #7469f5;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-right: 4px;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e5ea;
+            margin: 32px 0;
+        }
+
+        .contact-box {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+
+        .contact-box p {
+            margin-bottom: 4px;
+        }
+
+        .toc {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 16px 24px;
+            margin-bottom: 24px;
+        }
+
+        .toc p {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #86868b;
+        }
+
+        .toc a {
+            display: inline-block;
+            color: #7469f5;
+            text-decoration: none;
+            font-size: 14px;
+            margin-right: 16px;
+            margin-bottom: 4px;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 20px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            ul li {
+                font-size: 14px;
+            }
+
+            .highlight-box {
+                padding: 12px 16px;
+                font-size: 14px;
+            }
+
+            .contact-box {
+                padding: 16px 18px;
+            }
+
+            .toc a {
+                display: block;
+                margin-right: 0;
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 40px 48px;
+            }
+            .toc {
+                background: #f5f5f7;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- ====== 一、服務概述 ====== -->
+        <h2 id="sec1">一、服務概述</h2>
+
+        <p>Cloak應用（以下簡稱「本 App」）是一套基於 Apple FamilyControls、DeviceActivity、ManagedSettings 框架開發之本機iOS應用管理工具，提供應用隱藏、定時鎖定、使用時長上限、桌面圖示偽裝、群組管理、VIP付費解鎖完整功能等本機服務。所有管控邏輯僅於您的裝置本機執行，無雲端遠端監控、遠端控制功能。</p>
+
+        <p>本 App 分為免費版與 VIP 訂閱版：</p>
+        <ul>
+            <li><span class="tag-free">免費版</span> 僅可建立1個群組，單一群組最多新增5支應用；</li>
+            <li><span class="tag-vip">VIP 版</span> 解除上述所有數量限制，開放全部功能。</li>
+        </ul>
+
+        <p>VIP 訂閱透過 App Store 官方內購完成。</p>
+
+        <div class="highlight-box">
+            <strong>📌 重要提示：</strong>您下載、安裝、開啟、使用本 App，即代表已完整閱讀、充分理解並自願同意本服務條款全部內容；若不認可任一條款，請立即解除安裝本 App 並停止使用。
+        </div>
+
+        <!-- ====== 二、裝置使用規範 ====== -->
+        <h2 id="sec2">二、裝置使用規範</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">您僅可在本人合法持有、具完整使用權之 iPhone、iPad 裝置上使用本 App。</li>
+            <li style="margin-bottom:8px;font-size:15px;">嚴禁未經裝置所有權人同意，私自安裝、啟用管控功能，非法限制、監控他人行動裝置使用，衍生之民事、行政、刑事責任全由使用者自行承擔。</li>
+            <li style="margin-bottom:8px;font-size:15px;">禁止以本 App 規避公司、學校、企業之裝置管理規範，亦不可用於破解系統管控、惡意竄改系統設定等違規用途。</li>
+        </ol>
+
+        <!-- ====== 三、禁止行為 ====== -->
+        <h2 id="sec3">三、禁止行為</h2>
+
+        <p>使用本 App 期間，您承諾不會從事下列行為：</p>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">對本 App 進行反編譯、逆向工程、竄改安裝封包、破解訂閱、製作盜版散佈、二次封包發布；</li>
+            <li style="margin-bottom:8px;font-size:15px;">利用本 App 漏洞大量擷取系統應用識別碼、惡意佔用系統權限、干擾裝置正常運作；</li>
+            <li style="margin-bottom:8px;font-size:15px;">透過本 App 從事網路詐騙、竊取他人隱私、惡意限制他人裝置等違法違規行為；</li>
+            <li style="margin-bottom:8px;font-size:15px;">將您的訂閱權益提供給非本人持有之裝置使用，或向他人販售、出租訂閱權限。</li>
+        </ol>
+
+        <div class="highlight-box">
+            <strong>⚠️ 違規處理：</strong>若您有上述重大違規行為，開發者有權終止提供本 App 服務，已繳納之訂閱費用不予退還。開發者保留追究法律責任之權利。
+        </div>
+
+        <!-- ====== 四、VIP 訂閱相關規則 ====== -->
+        <h2 id="sec4">四、VIP 訂閱相關規則</h2>
+
+        <h3>1. 扣款與週期</h3>
+        <p>訂閱週期以 App Store 內購頁面顯示為準，費用由您綁定之 Apple 帳戶自動扣除。訂閱到期前24小時會執行自動續約扣款。</p>
+
+        <h3>2. 自動續約管理</h3>
+        <p>您可隨時前往「iPhone 設定 &gt; Apple ID &gt; 訂閱項目」關閉自動續約，關閉後到期不再扣款。</p>
+
+        <h3>3. 訂閱權益說明</h3>
+        <p>本 App 無需註冊帳號，VIP 權益透過 Apple ID 辨識。VIP 訂閱權益綁定購買時使用之 Apple ID，同一 Apple ID 登入之多台裝置皆可還原訂閱權益，但不得轉讓給其他 Apple ID 或與他人共用。</p>
+
+        <h3>4. 退款規則</h3>
+        <p>所有扣款、退款流程由 Apple 官方獨立審核處理，開發者無權處理退款。若有退款需求請直接聯繫 Apple 客服。</p>
+
+        <h3>5. 系統適配免責</h3>
+        <p>因 iOS 系統重大版本更新或 Apple 官方管控框架介面調整，造成部分功能暫時失效或受限，開發者會盡快適配修復。倘若 Apple 永久關閉相關介面，導致核心功能無法繼續提供，開發者將依剩餘訂閱期限按比例退還費用，或提供其他合理補償方案。使用者可自行選擇繼續使用，或透過 Apple 官方管道申請退款。</p>
+
+        <h3>6. 訂閱資料說明</h3>
+        <p>訂閱產生之匿名交易憑證僅於本機驗證權益，不會上傳雲端，詳見<a href="#" style="color:#7469f5;text-decoration:none;">《隱私權政策》</a>。</p>
+
+        <!-- ====== 五、服務免責聲明 ====== -->
+        <h2 id="sec5">五、服務免責聲明</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">本 App 仰賴 iOS 官方系統框架提供管控能力，若 Apple 關閉、限制相關介面，可能造成部分或全部管控功能失效，開發者會盡力適配，但不承擔衍生之直接或間接損失。</li>
+            <li style="margin-bottom:8px;font-size:15px;">因裝置系統故障、系統版本過舊、系統權限關閉、裝置重置還原等因素，導致管控規則不生效或資料遺失，開發者不負補償或賠償責任。</li>
+            <li style="margin-bottom:8px;font-size:15px;">本 App 僅提供工具功能，受系統框架限制，部分系統應用、系統元件無法納入管控屬正常機制限制。</li>
+            <li style="margin-bottom:8px;font-size:15px;">開發者不保證服務永久無故障、不中斷執行，會持續維護迭代優化，但不承諾完全無程式錯誤（Bug）。</li>
+        </ol>
+
+        <!-- ====== 六、使用者資料處理 ====== -->
+        <h2 id="sec6">六、使用者資料處理</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">本 App 所有設定資料僅儲存於裝置本機沙盒，不上傳雲端。解除安裝 App 將自動清除全部設定資料。相關儲存及權限規範詳見<a href="#" style="color:#7469f5;text-decoration:none;">《隱私權政策》</a>。</li>
+            <li style="margin-bottom:8px;font-size:15px;">使用者應妥善保管自身裝置。若裝置遺失、借予他人造成管控設定遭竄改或資料外洩，相關責任由使用者自行承擔。</li>
+            <li style="margin-bottom:8px;font-size:15px;">若開發者決定停止營運本 App，將提前60日於 App 內公告，已訂閱使用者於剩餘訂閱期內仍可正常使用，到期後不再自動續約。</li>
+        </ol>
+
+        <!-- ====== 七、未成年人使用 ====== -->
+        <h2 id="sec7">七、未成年人使用</h2>
+
+        <p>未成年人使用本 App 前，須由監護人完整閱讀本服務條款並同意所有約束內容。監護人應合理引導未成年人使用裝置。本 App 之時長管控功能僅作為輔助工具，開發者不對未成年人之行為負監督責任。</p>
+
+        <!-- ====== 八、條款更新 ====== -->
+        <h2 id="sec8">八、條款更新</h2>
+
+        <p>開發者有權依據法令修訂、Apple 平台規則異動、產品功能調整等情形更新本服務條款。更新後將於 App 內彈窗提示，您持續使用本 App 即視為接受更新後之完整條款。最新版本同步發布於 App Store 產品頁與公開網頁。</p>
+
+        <!-- ====== 九、爭議解決 ====== -->
+        <h2 id="sec9">九、爭議解決</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">本條款之訂立、履行、解釋及爭議解決，一律適用中華人民共和國法律。</li>
+            <li style="margin-bottom:8px;font-size:15px;">因本條款或使用本 App 衍生之任何爭議，雙方應先透過友好協商解決；協商不成者，任一方均可將爭議提交至開發者所在地具管轄權之人民法院訴訟處理。</li>
+        </ol>
+
+        <!-- ====== 十、可分割性 ====== -->
+        <h2 id="sec10">十、可分割性</h2>
+
+        <p>若本條款任一條文經認定無效或無法執行，不影響其餘條款之效力。</p>
+
+        <!-- ====== 十一、聯絡管道 ====== -->
+        <h2 id="sec11">十一、聯絡管道</h2>
+
+        <div class="contact-box">
+            <p>若有服務或訂閱相關問題，可透過下列管道聯繫開發者：</p>
+            <p style="margin-top:8px;"><strong>📧 電子郵件：</strong> yong_bin123@126.com</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <p style="text-align:center;font-size:13px;color:#86868b;">
+            Cloak · 本機優先 · 隱私至上
+        </p>
+
+    </div>
+
+</body>
+</html>
