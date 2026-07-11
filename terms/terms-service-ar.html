@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>شروط خدمة المستخدم · Cloak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Amiri", "Tajawal", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 20px;
+            line-height: 1.7;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 48px 56px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .update-date {
+            text-align: center;
+            color: #86868b;
+            font-size: 15px;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f2;
+            letter-spacing: -0.3px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            letter-spacing: -0.2px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+
+        ul {
+            padding-right: 24px;
+            margin-bottom: 14px;
+        }
+
+        ul li {
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: #1d1d1f;
+            list-style-type: disc;
+        }
+
+        ul li ul {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            padding-right: 20px;
+        }
+
+        ul li ul li {
+            list-style-type: circle;
+            font-size: 14px;
+        }
+
+        .highlight-box {
+            background: #f8f8fa;
+            border-right: 4px solid #7469f5;
+            padding: 14px 20px;
+            margin: 16px 0;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #1d1d1f;
+        }
+
+        .highlight-box strong {
+            color: #7469f5;
+        }
+
+        .tag-free {
+            display: inline-block;
+            background: #e5e5ea;
+            color: #1d1f;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-left: 4px;
+        }
+
+        .tag-vip {
+            display: inline-block;
+            background: #7469f5;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-left: 4px;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e5ea;
+            margin: 32px 0;
+        }
+
+        .contact-box {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+
+        .contact-box p {
+            margin-bottom: 4px;
+        }
+
+        .toc {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 16px 24px;
+            margin-bottom: 24px;
+        }
+
+        .toc p {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #86868b;
+        }
+
+        .toc a {
+            display: inline-block;
+            color: #7469f5;
+            text-decoration: none;
+            font-size: 14px;
+            margin-left: 16px;
+            margin-bottom: 4px;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 20px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            ul li {
+                font-size: 14px;
+            }
+
+            .highlight-box {
+                padding: 12px 16px;
+                font-size: 14px;
+            }
+
+            .contact-box {
+                padding: 16px 18px;
+            }
+
+            .toc a {
+                display: block;
+                margin-left: 0;
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 40px 48px;
+            }
+            .toc {
+                background: #f5f5f7;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- ١. نظرة عامة على الخدمة -->
+        <h2 id="sec1">١. نظرة عامة على الخدمة</h2>
+
+        <p>تطبيق Cloak (ويُشار إليه فيما يلي بـ «التطبيق») هو أداة إدارة محلية لنظام iOS مطورة بناءً على إطارات Apple الرسمية FamilyControls وDeviceActivity وManagedSettings. يوفر خدمات محلية مثل إخفاء التطبيقات، القفل المجدول، حدود مدة الاستخدام، تنكر رمز الشاشة الرئيسية، إدارة المجموعات، وفتح جميع الميزات عن طريق اشتراك VIP مدفوع. جميع منطق التحكم يعمل محليًا على جهازك فقط، ولا توجد وظائف مراقبة أو تحكم عن بُعد عبر السحاب.</p>
+
+        <p>التطبيق مقسم إلى نسخة مجانية ونسخة اشتراك VIP:</p>
+        <ul>
+            <li><span class="tag-free">النسخة المجانية</span>: يسمح بإنشاء مجموعة واحدة فقط، ويمكن إضافة 5 تطبيقات كحد أقصى لكل مجموعة؛</li>
+            <li><span class="tag-vip">النسخة VIP</span>: يزيل جميع القيود العددية المذكورة أعلاه ويفتح جميع الميزات الكاملة.</li>
+        </ul>
+
+        <p>يتم إجراء اشتراك VIP عبر عمليات الشراء داخل متجر App Store الرسمي.</p>
+
+        <div class="highlight-box">
+            <strong>📌 تنبيه هام:</strong> عند تنزيل أو تثبيت أو فتح أو استخدام هذا التطبيق، فإنك تقر بأنك قرأت هذه الشروط بالكامل وفهمتها ووافقت عليها طوعًا. إذا كنت لا توافق على أي بند من هذه الشروط، يرجى إلغاء تثبيت التطبيق فورًا والتوقف عن استخدامه.
+        </div>
+
+        <!-- ٢. قواعد استخدام الجهاز -->
+        <h2 id="sec2">٢. قواعد استخدام الجهاز</h2>
+
+        <ol style="padding-right:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">لا يجوز لك استخدام هذا التطبيق إلا على أجهزة iPhone أو iPad التي تمتلكها قانونًا وتملك حق الاستخدام الكامل لها.</li>
+            <li style="margin-bottom:8px;font-size:15px;">يُحظر بشدة تثبيت وتفعيل وظائف التحكم دون إذن صاحب الجهاز، أو تقييد أو مراقبة استخدام هاتف شخص آخر بشكل غير قانوني، وتتحمل المستخدم وحده كافة المسؤوليات المدنية والإدارية والجنائية الناتجة عن ذلك.</li>
+            <li style="margin-bottom:8px;font-size:15px;">يمنع استخدام التطبيق للتهرب من لوائح إدارة الأجهزة في المؤسسات أو المدارس أو الشركات، أو لاختراق ضوابط النظام أو تعديل إعدادات النظام بشكل ضار.</li>
+        </ol>
+
+        <!-- ٣. الأفعال الممنوعة -->
+        <h2 id="sec3">٣. الأفعال الممنوعة</h2>
+
+        <p>أثناء استخدام التطبيق، تتعهد بعدم القيام بالأفعال التالية:</p>
+
+        <ol style="padding-right:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">إجراء هندسة عكسية أو تعديل حزمة التثبيت أو كسر الاشتراك أو نسخ التطبيق وتوزيعه أو إعادة حزمته ونشره؛</li>
+            <li style="margin-bottom:8px;font-size:15px;">استغلال ثغرات التطبيق لاستخراج معرفات التطبيقات بشكل جماعي أو احتكار صلاحيات النظام أو إعاقة تشغيل الجهاز بشكل طبيعي؛</li>
+            <li style="margin-bottom:8px;font-size:15px;">استخدام التطبيق لارتكاب عمليات احتيال عبر الإنترنت أو سرقة خصوصية الآخرين أو تقييد أجهزة الأشخاص الآخرين بشكل ضار؛</li>
+            <li style="margin-bottom:8px;font-size:15px;">منح حقوق الاشتراك لجهاز لا تملكه، أو بيع أو تأجير صلاحيات الاشتراك للآخرين.</li>
+        </ol>
+
+        <div class="highlight-box">
+            <strong>⚠️ إجراءات المخالفة:</strong> إذا ارتكبت مخالفات خطيرة مما سبق، يحق للمطور إيقاف تقديم الخدمة لك، ولن يتم استرداد رسوم الاشتراك التي دفعتها. يحتفظ المطور بالحق في اتخاذ الإجراءات القانونية ضدك.
+        </div>
+
+        <!-- ٤. قواعد اشتراك VIP -->
+        <h2 id="sec4">٤. قواعد اشتراك VIP</h2>
+
+        <h3>١. الرسوم والدورة الزمنية</h3>
+        <p>تُحدد مدة الاشتراك حسب ما يظهر في صفحة الشراء داخل App Store، وتُخصم الرسوم تلقائيًا من حساب Apple المرتبط بك. يتم خصم التجديد التلقائي خلال 24 ساعة قبل انتهاء مدة الاشتراك.</p>
+
+        <h3>٢. إدارة التجديد التلقائي</h3>
+        <p>يمكنك إيقاف التجديد التلقائي في أي وقت عبر «إعدادات iPhone > معرف Apple > الاشتراكات»، وبعد الإيقاف لن تُخصم رسوم عند انتهاء المدة.</p>
+
+        <h3>٣. توضيح حقوق الاشتراك</h3>
+        <p>لا يلزم تسجيل حساب في هذا التطبيق، ويتم التعرف على حقوق VIP عبر معرف Apple. حقوق الاشتراك مرتبطة بمعرف Apple الذي استخدمته عند الشراء، ويمكن استعادة الاشتراك على جميع الأجهزة التي تسجل الدخول بنفس المعرف، لكن لا يمكن نقلها أو مشاركتها مع معرفات Apple أخرى.</p>
+
+        <h3>٤. قواعد استرداد المبالغ</h3>
+        <p>جميع عمليات الخصم والاسترداد تخضع لمراجعة ومعالجة Apple الرسمية، ولا يملك المطور أي صلاحية على عمليات الاسترداد. إذا كنت ترغب في استرداد المبلغ، تواصل مباشرة مع دعم عملاء Apple.</p>
+
+        <h3>٥. إخلاء مسؤولية التوافق مع النظام</h3>
+        <p>إذا تسببت التحديثات الرئيسية لنظام iOS أو تعديل واجهات برمجة التطبيقات الرسمية من Apple في تعطيل مؤقت لبعض الميزات أو تقييدها، سيعمل المطور على التكيف والإصلاح في أقرب وقت. إذا أغلقت Apple الواجهات ذات الصلة بشكل دائم مما أدى إلى إيقاف الميزات الأساسية، سيعيد المبلغ للمستخدمين بشكل تناسب الفترة المتبقية من الاشتراك أو يقدم تعويضًا معقولًا، ويمكن للمستخدم اختيار الاستمرار في الاستخدام أو طلب استرداد عبر قنوات Apple الرسمية.</p>
+
+        <h3>٦. بيانات الاشتراك</h3>
+        <p>الوثائق المجهولة الناتجة عن الاشتراك تُستخدم فقط للتحقق المحلي من الصلاحيات ولا يتم رفعها إلى السحاب، انظر «سياسة الخصوصية» عبر الرابط أدناه.</p>
+
+        <!-- ٥. إخلاء مسؤولية الخدمة -->
+        <h2 id="sec5">٥. إخلاء مسؤولية الخدمة</h2>
+
+        <ol style="padding-right:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">يعتمد التطبيق على إطارات نظام iOS الرسمية لتقديم وظائف التحكم. إذا أغلقت Apple أو قيدت الواجهات ذات الصلة، قد تتعطل بعض أو كل الميزات، وسيسعى المطور للتكيف لكنه لا يتحمل المسؤولية عن أي خسائر مباشرة أو غير مباشرة ناتجة عن ذلك.</li>
+            <li style="margin-bottom:8px;">إذا تسببت أعطال النظام أو إصدارات نظام قديمة أو إغلاق صلاحيات النظام أو إعادة ضبط الجهاز في عدم تفعيل قواعد التحكم أو فقدان البيانات، لا يتحمل المطور أي تعويض أو استرداد.</li>
+            <li style="margin-bottom:8px;">التطبيق يوفر فقط أدوات مساعدة، وبسبب قيود إطارات النظام، لا يمكن تضمين بعض التطبيقات والمكونات النظامية ضمن التحكم، وهذا يُعد قيدًا طبيعيًا للنظام.</li>
+            <li style="margin-bottom:8px;">لا يضمن المطور أن الخدمة ستعمل دون أعطال أو انقطاع دائمًا، وسيعمل على الصيانة والتطوير لكنه لا يضمن عدم وجود أخطاء برمجية.</li>
+        </ol>
+
+        <!-- ٦. معالجة بيانات المستخدم -->
+        <h2 id="sec6">٦. معالجة بيانات المستخدم</h2>
+
+        <ol style="padding-right:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">جميع بيانات الإعدادات في التطبيق تُخزن محليًا في حاوية الحماية بالجهاز فقط، ولا يتم رفعها إلى السحاب. إلغاء تثبيت التطبيق سيقوم بمسح جميع البيانات تلقائيًا. انظر «سياسة الخصوصية» للقواعد المتعلقة بالتخزين والصلاحيات.</li>
+            <li style="margin-bottom:8px;font-size:15px;">يجب على المستخدم الحفاظ على جهازه بشكل جيد. إذا ضاع الجهاز أو تم إعارته لشخص آخر مما أدى إلى تعديل إعدادات التحكم أو تسريب البيانات، تتحمل المستخدم وحده المسؤولية.</li>
+            <li style="margin-bottom:8px;">إذا قرر المطور إيقاف تشغيل التطبيق، سيعلن عن ذلك داخل التطبيق قبل 60 يومًا. المستخدمون الذين لديهم اشتراك سوف يظلون قادرين على الاستخدام خلال الفترة المتبقية، ولن يتم تجديد الاشتراك عند انتهائه.</li>
+        </ol>
+
+        <!-- ٧. استخدام القاصرين -->
+        <h2 id="sec7">٧. استخدام القاصرين</h2>
+
+        <p>يجب على أولياء الأمور قراءة هذه الشروط بالكامل والموافقة على جميع بنودها قبل أن يستخدم القاصر التطبيق. يجب على الوصي توجيه القاصر في استخدام الجهاز بشكل معقول. وظائف تحديد مدة الاستخدام في التطبيق هي مجرد أداة مساعدة، ولا يتحمل المطور مسؤولية مراقبة تصرفات القاصرين.</p>
+
+        <!-- ٨. تحديث الشروط -->
+        <h2 id="sec8">٨. تحديث الشروط</h2>
+
+        <p>يحق للمطور تحديث هذه الشروط بناءً على التعديلات القانونية أو تغيير قواعد منصة Apple أو تطوير الميزات. بعد التحديث، ستظهر نافذة منبثقة داخل التطبيق للإشعار، واستمرارك في الاستخدام يعني قبولك للشروط المحدثة. سيتم نشر أحدث إصدار في صفحة المنتج على App Store والصفحة العامة على الويب.</p>
+
+        <!-- ٩. حل النزاعات -->
+        <h2 id="sec9">٩. حل النزاعات</h2>
+
+        <ol style="padding-right:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">تخضع صياغة هذه الشروط وتنفيذها وتفسيرها وحل النزاعات الناتجة عنها لقوانين جمهورية الصين الشعبية.</li>
+            <li style="margin-bottom:8px;font-size:15px;">أي نزاع ناتج عن هذه الشروط أو استخدام التطبيق يجب حله أولاً عبر التفاوض الودي. إذا فشل التفاوض، يجوز لأي طرف رفع الدعوى أمام المحكمة ذات الاختصاص في مقر المطور.</li>
+        </ol>
+
+        <!-- ١٠. قابلية الفصل بين البنود -->
+        <h2 id="sec10">١٠. قابلية فصل البنود</h2>
+
+        <p>إذا تبين أن أي بند من هذه الشروط باطل أو غير قابل للتنفيذ، لا يؤثر ذلك على سريان بقية البنود.</p>
+
+        <!-- ١١. قنوات التواصل -->
+        <h2 id="sec11">١١. قنوات التواصل</h2>
+
+        <div class="contact-box">
+            <p>إذا كان لديك أسئلة تتعلق بالخدمة أو الاشتراك، تواصل مع المطور عبر الوسيلة التالية:</p>
+            <p style="margin-top:8px;"><strong>📧 البريد الإلكتروني:</strong> yong_bin123@126.com</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <p style="text-align:center;font-size:13px;color:#86868b;">
+            Cloak · نعطّل البيانات محليًا · خصوصية في المقام الأول
+        </p>
+
+    </div>
+
+</body>
+</html>

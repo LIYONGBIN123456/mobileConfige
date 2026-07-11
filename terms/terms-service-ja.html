@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>利用規約 · Cloak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 48px 56px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .update-date {
+            text-align: center;
+            color: #86868b;
+            font-size: 15px;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f2;
+            letter-spacing: -0.3px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            letter-spacing: -0.2px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 14px;
+        }
+
+        ul li {
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: #1d1d1f;
+            list-style-type: disc;
+        }
+
+        ul li ul {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            padding-left: 20px;
+        }
+
+        ul li ul li {
+            list-style-type: circle;
+            font-size: 14px;
+        }
+
+        .highlight-box {
+            background: #f8f8fa;
+            border-left: 4px solid #7469f5;
+            padding: 14px 20px;
+            margin: 16px 0;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #1d1d1f;
+        }
+
+        .highlight-box strong {
+            color: #7469f5;
+        }
+
+        .tag-free {
+            display: inline-block;
+            background: #e5e5ea;
+            color: #1d1d1f;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-right: 4px;
+        }
+
+        .tag-vip {
+            display: inline-block;
+            background: #7469f5;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-right: 4px;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e5ea;
+            margin: 32px 0;
+        }
+
+        .contact-box {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+
+        .contact-box p {
+            margin-bottom: 4px;
+        }
+
+        .toc {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 16px 24px;
+            margin-bottom: 24px;
+        }
+
+        .toc p {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #86868b;
+        }
+
+        .toc a {
+            display: inline-block;
+            color: #7469f5;
+            text-decoration: none;
+            font-size: 14px;
+            margin-right: 16px;
+            margin-bottom: 4px;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 20px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            ul li {
+                font-size: 14px;
+            }
+
+            .highlight-box {
+                padding: 12px 16px;
+                font-size: 14px;
+            }
+
+            .contact-box {
+                padding: 16px 18px;
+            }
+
+            .toc a {
+                display: block;
+                margin-right: 0;
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 40px 48px;
+            }
+            .toc {
+                background: #f5f5f7;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- 1. サービス概要 -->
+        <h2 id="sec1">1. サービス概要</h2>
+
+        <p>Cloak（以下「本アプリ」）はApple公式のFamilyControls、DeviceActivity、ManagedSettingsフレームワークを基盤に開発されたローカル型iOS管理ツールです。アプリ非表示、時間指定ロック、1日利用時間制限、ホーム画面アイコン偽装、グループ管理、VIPサブスクリプションによる全機能解放などのローカルサービスを提供します。すべての制御ロジックはお使いの端末内のみで動作し、クラウドによる遠隔監視・遠隔操作機能は搭載しておりません。</p>
+
+        <p>本アプリは無料版とVIPサブスクリプション版に分かれています：</p>
+        <ul>
+            <li><span class="tag-free">無料版</span>：作成可能なグループは1つ、1グループに登録できるアプリは最大5個までに制限；</li>
+            <li><span class="tag-vip">VIP版</span>：上記の数量制限がすべて解除され、全機能が利用可能。</li>
+        </ul>
+
+        <p>VIPサブスクリプションはApp Store公式のアプリ内課金にてご購入いただきます。</p>
+
+        <div class="highlight-box">
+            <strong>📌 重要なお知らせ：</strong>本アプリをダウンロード・インストール・起動・利用した時点で、本利用規約の全文を読み、理解した上で自発的に同意したものとみなします。規約のいずれかの条項にご同意いただけない場合は、直ちに本アプリをアンインストールし、ご利用を停止してください。
+        </div>
+
+        <!-- 2. 端末利用ルール -->
+        <h2 id="sec2">2. 端末利用ルール</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">本アプリは自身が合法的に所有し、完全な利用権を持つiPhone、iPad端末のみで使用できます。</li>
+            <li style="margin-bottom:8px;font-size:15px;">端末所有者の許可なしに管理機能をインストール・起動し、他人のスマホ使用を不当に制限・監視する行為を禁止します。これにより生じる民事・行政・刑事上の責任はすべて利用者が負うものとします。</li>
+            <li style="margin-bottom:8px;font-size:15px;">企業・学校の端末管理規定を回避する目的、システム制御を突破したり悪意のある設定改変を行う場面での使用を禁止します。</li>
+        </ol>
+
+        <!-- 3. 禁止事項 -->
+        <h2 id="sec3">3. 禁止事項</h2>
+
+        <p>本アプリを利用する際、以下の行為を行わないことに同意していただきます：</p>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">本アプリの逆コンパイル、リバースエンジニアリング、インストーラ改ざん、サブスクリプションのクラック、海賊版作成・配布、再パッケージ配信；</li>
+            <li style="margin-bottom:8px;font-size:15px;">アプリの脆弱性を利用しシステムアプリIDを一括取得、システム権限を不当に占有、端末の正常な動作を妨害；</li>
+            <li style="margin-bottom:8px;font-size:15px;">本アプリを利用しネット詐欺、他人のプライバシー窃取、他人の端末を悪意的に制限する違法行為；</li>
+            <li style="margin-bottom:8px;font-size:15px;">自身の所有外の端末にサブスクリプション権限を共有、また他人に権限を販売・貸し出す行為。</li>
+        </ol>
+
+        <div class="highlight-box">
+            <strong>⚠️ 違反時の対応：</strong>上記の重大な違反行為が確認された場合、開発者は本アプリのサービス提供を終了する権利を有し、既にお支払いいただいたサブスクリプション料金の返金には応じません。また開発者は法的責任を追及する権利を留保します。
+        </div>
+
+        <!-- 4. VIPサブスクリプションに関する規約 -->
+        <h2 id="sec4">4. VIPサブスクリプションに関する規約</h2>
+
+        <h3>1. 課金と契約期間</h3>
+        <p>サブスクリプション期間はApp Store購入画面に記載の通りで、ご登録のAppleアカウントより自動的に料金が引き落とされます。契約終了24時間前までに自動更新の課金処理が実行されます。</p>
+
+        <h3>2. 自動更新の管理方法</h3>
+        <p>「iPhone 設定 > Apple ID > サブスクリプション」よりいつでも自動更新をオフにできます。オフ後は契約期間満了時に課金は発生しません。</p>
+
+        <h3>3. サブスクリプション権限について</h3>
+        <p>本アプリにアカウント登録機能はなく、VIP権限はApple IDによって判別されます。購入時のApple IDに権限が紐付けられ、同一IDでログインした複数端末で購入情報を復元可能ですが、他のApple IDへ譲渡・共有することはできません。</p>
+
+        <h3>4. 返金規約</h3>
+        <p>すべての課金・返金処理はApple公式の審査・管理となり、開発者に返金操作の権限はございません。返金をご希望の場合はAppleサポートへ直接お問い合わせください。</p>
+
+        <h3>5. システム適用免責事項</h3>
+        <p>iOSメジャーアップデートまたはApple公式フレームワークAPIの仕様変更により一部機能が一時的に利用不可または制限された場合、開発者は速やかに対応・修正を行います。Appleが関連APIを恒久的に閉鎖しコア機能が提供不能になった場合、残存期間に応じた料金返金または合理的な補償案を提示します。ユーザーはサービス継続またはApple公式経由の返金申請を選択できます。</p>
+
+        <h3>6. サブスクリプションデータについて</h3>
+        <p>サブスクリプションで生成される匿名取引証明はローカルで権限検証のみに使用され、クラウドへ送信されません。詳細は<a href="#" style="color:#7469f5;text-decoration:none;">プライバシーポリシー</a>をご確認ください。</p>
+
+        <!-- 5. サービス免責事項 -->
+        <h2 id="sec5">5. サービス免責事項</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">本アプリの制御機能はiOS公式フレームワークに依存しています。Appleが関連APIを閉鎖・制限した場合、一部またはすべての管理機能が失効する可能性があり、開発者はこれにより生じた直接・間接的損害について責任を負いません。</li>
+            <li style="margin-bottom:8px;font-size:15px;">端末のシステム障害、OSバージョンの古さ、権限の無効化、端末初期化などが原因で管理ルールが適用されない・データが消失した場合、開発者は補償・返金責任を負いません。</li>
+            <li style="margin-bottom:8px;font-size:15px;">本アプリはツールとしての機能のみを提供し、システムフレームワークの制約により一部システムアプリ・コンポーネントは管理対象にできない仕様となっています。</li>
+            <li style="margin-bottom:8px;font-size:15px;">開発者はサービスが永久に不具合なく継続することを保証せず、保守・アップデートに努めますが、完全にバグのない動作を約束するものではありません。</li>
+        </ol>
+
+        <!-- 6. ユーザーデータの取り扱い -->
+        <h2 id="sec6">6. ユーザーデータの取り扱い</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">すべての設定データは端末内サンドボックスにのみ保存されクラウドへ送信されません。アンインストール時にすべてのデータが自動消去されます。保存・権限関連の詳細は<a href="#" style="color:#7469f5;text-decoration:none;">プライバシーポリシー</a>を参照ください。</li>
+            <li style="margin-bottom:8px;font-size:15px;">端末の管理はユーザー自身が適切に保管する責任があります。紛失・貸し出しにより設定改ざんやデータ流出が発生した場合、責任はすべてユーザーが負います。</li>
+            <li style="margin-bottom:8px;font-size:15px;">開発者が本アプリの運営を停止する場合、60日前までにアプリ内で告知を行います。既存サブスクリプションユーザーは残存期間中通常通り利用可能で、期間満了後の自動更新は行われません。</li>
+        </ol>
+
+        <!-- 7. 未成年者の利用について -->
+        <h2 id="sec7">7. 未成年者の利用について</h2>
+
+        <p>未成年者が本アプリを利用する前に、保護者が本利用規約全文を読みすべての条項に同意する必要があります。保護者は未成年者の端末利用を適切に誘導してください。時間制限機能は補助ツールに過ぎず、開発者は未成年者の利用行動に対する監督責任を負いません。</p>
+
+        <!-- 8. 規約の更新 -->
+        <h2 id="sec8">8. 規約の更新</h2>
+
+        <p>開発者は法令改正、Appleプラットフォーム規則変更、製品機能改修などに伴い本利用規約を更新する権利を有します。更新後はアプリ内ポップアップにて通知し、引き続き利用した時点で更新後の規約に同意したものとみなします。最新版はApp Store商品ページと公開Webページに同時掲載されます。</p>
+
+        <!-- 9. 紛争解決 -->
+        <h2 id="sec9">9. 紛争解決</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">本規約の締結、履行、解釈および紛争解決には中華人民共和国の法律が適用されます。</li>
+            <li style="margin-bottom:8px;font-size:15px;">本規約またはアプリ利用により生じた紛争は、まず友好的な協議により解決を図ります。協議が成立しない場合、いずれの当事者も開発者所在地を管轄する人民法院に提訴することができます。</li>
+        </ol>
+
+        <!-- 10. 分離可能性 -->
+        <h2 id="sec10">10. 分離可能性</h2>
+
+        <p>本規約のいずれかの条項が無効または執行不能と判断された場合でも、残りの条項の効力に影響を与えません。</p>
+
+        <!-- 11. お問い合わせ先 -->
+        <h2 id="sec11">11. お問い合わせ先</h2>
+
+        <div class="contact-box">
+            <p>サービスやサブスクリプションに関するご質問がある場合は、下記よりご連絡ください：</p>
+            <p style="margin-top:8px;"><strong>📧 メール：</strong> yong_bin123@126.com</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <p style="text-align:center;font-size:13px;color:#86868b;">
+            Cloak · ローカル処理優先 · プライバシー最優先
+        </p>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- シミュレーターWKWebViewの文字化け対策 二重文字コード指定 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>プライバシーポリシー · Cloak</title>
+    <!-- JSによる文字コード補完処理 -->
+    <script>
+        document.characterSet = "UTF-8";
+        document.charset = "utf-8";
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 48px 56px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .update-date {
+            text-align: center;
+            color: #86868b;
+            font-size: 15px;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f2;
+            letter-spacing: -0.3px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 22px;
+            margin-bottom: 8px;
+            letter-spacing: -0.2px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 14px;
+            color: #1d1d1f;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        ul li {
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: #1d1d1f;
+            list-style-type: disc;
+        }
+
+        ul li ul {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            padding-left: 20px;
+        }
+
+        ul li ul li {
+            list-style-type: circle;
+            font-size: 14px;
+        }
+
+        .highlight-box {
+            background: #f8f8fa;
+            border-left: 4px solid #7469f5;
+            padding: 14px 20px;
+            margin: 16px 0;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #1d1d1f;
+        }
+
+        .highlight-box strong {
+            color: #7469f5;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e5ea;
+            margin: 32px 0;
+        }
+
+        .contact {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+
+        .contact p {
+            margin-bottom: 4px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #34c759;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-right: 6px;
+        }
+
+        .badge-warn {
+            background: #ff9500;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 20px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            ul li {
+                font-size: 14px;
+            }
+
+            .highlight-box {
+                padding: 12px 16px;
+                font-size: 14px;
+            }
+
+            .contact {
+                padding: 16px 18px;
+            }
+        }
+
+        /* 印刷用スタイル */
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 40px 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- 1. はじめに -->
+        <h2>1. はじめに</h2>
+
+        <p>本プライバシーポリシーは <strong>Cloak</strong>（以下「本アプリ」）に適用されます。本アプリはApple公式のFamilyControls、DeviceActivity、ManagedSettingsフレームワークを利用したローカル型アプリ管理ツールで、アプリ非表示・時間指定ロック・1日利用時間制限・ホーム画面アイコン偽装・グループ管理・VIPサブスクリプションによる全機能解放などの機能を提供します。</p>
+
+        <p>当社は『中華人民共和国サイバーセキュリティ法』『データ安全法』『個人情報保護法』『未成年者ネット保護条例』、App Storeプライバシー規約、GDPR、CCPAなど世界共通のプライバー規制を厳格に遵守します。</p>
+
+        <div class="highlight-box">
+            <strong>🔒 本アプリに独自のクラウドサーバーは存在しません</strong>。ユーザーのローカルデータを一切アップロードせず、個人を特定する情報を収集しません。広告・分析・トラッキング系の第三者SDKを一切導入しておらず、すべての業務ロジックはお使いの端末内のみで実行されます。
+        </div>
+
+        <p>本アプリをダウンロード・インストール・起動・利用した時点で、本プライバシーポリシーの全条項を完全に読み、理解した上で自発的に同意したものとみなします。本ポリシーの内容にご同意いただけない場合は、直ちに本アプリをアンインストールし、すべての利用を停止してください。</p>
+
+        <!-- 2. 収集しない情報 -->
+        <h2>2. 自発的に取得しない情報</h2>
+
+        <p>本アプリはコード・SDK・トラッキングツールを通じて以下のデータを能動的に取得・送信することは一切なく、第三者への配布・販売・貸し出しは行いません。</p>
+
+        <ul>
+            <li><strong>本人特定情報：</strong>氏名、電話番号、メールアドレス、身分証明書、SNSアカウント、住所など個人を識別する情報；</li>
+            <li><strong>決済情報：</strong>カード番号、支払いパスワード、Apple ID情報、購入履歴；</li>
+            <li><strong>端末追跡ID：</strong>IDFA、端末シリアル番号、IMEIなどハードウェア固有識別子；</li>
+            <li><strong>位置情報：</strong>GPS座標、移動軌跡；</li>
+            <li><strong>ユーザーコンテンツ：</strong>写真アルバム、連絡先、SMS、チャット記録、ローカルファイル；</li>
+            <li><strong>他アプリ内部データ：</strong>管理対象アプリ内のコンテンツ；</li>
+            <li><strong>ネット閲覧履歴：</strong>閲覧記録、検索履歴；</li>
+            <li><strong>診断・追跡データ：</strong>クラッシュログ、利用統計、クリックヒートマップなど。</li>
+        </ul>
+
+        <p>分析・広告・プッシュ通知・トラッキング系の第三者SDKを導入していないため、第三者が能動的・受動的にローカルデータを取得する経路は存在しません。</p>
+
+        <!-- 3. ローカルにのみ保存する必要なデータ -->
+        <h2>3. 端末内にのみ保存する必須データ</h2>
+
+        <p>管理機能を実現するため、本アプリはお使いの端末のローカルサンドボックスおよびApp Group共有領域に設定データのみ保存します。<strong>クラウド同期・リモートバックアップはなく、当該端末からのみ閲覧可能</strong>。アプリをアンインストールすると全データが自動的に完全削除されます。</p>
+
+        <h3>1. アプリ管理グループ設定</h3>
+        <ul>
+            <li><strong>保存内容：</strong>作成した非表示/ロックグループ名、選択したアプリの匿名トークン、開始・終了時間、毎週の繰り返しルール、1日利用上限、グループの有効/無効ステータス。</li>
+            <li><strong>利用目的：</strong>時間指定・時間制限によるアプリ非表示・ロック機能を実現。</li>
+        </ul>
+
+        <h3>2. アイコン偽装設定</h3>
+        <ul>
+            <li><strong>保存内容：</strong>手動で選択したAlternate Icon識別子。</li>
+            <li><strong>利用目的：</strong>ホーム画面のアプリアイコンを変更。</li>
+        </ul>
+
+        <h3>3. スクリーンタイムローカル統計</h3>
+        <ul>
+            <li><strong>保存内容：</strong>iOSのDeviceActivity APIから取得する各アプリの利用時間。</li>
+            <li><strong>利用目的：</strong>ホーム画面に端末の利用状況を表示。外部に送信されません。</li>
+        </ul>
+
+        <h3>4. サブスクリプション匿名証明</h3>
+        <ul>
+            <li><strong>保存内容：</strong>Apple決済システムから返却されるoriginal_transaction_id、有効期限、サブスク周期識別子。</li>
+            <li><strong>利用目的：</strong>ローカルでVIP権限の有効性を検証し、ローカル側でのサブスク状態改ざんを防止。ユーザー追跡・プロファイリング・第三者共有には一切使用しません。</li>
+        </ul>
+
+        <div class="highlight-box">
+            <strong>📌 特記事項：</strong>本アプリはApple ID、氏名、カード番号、配送先住所など個人を特定する情報を保存しません。すべての決済処理はApple App Storeが独立して実行します。
+        </div>
+
+        <!-- 4. アプリ内課金・VIPサブスクについて -->
+        <h2>4. アプリ内課金・VIPサブスクについて</h2>
+
+        <h3>決済処理はAppleが完全管理</h3>
+        <p>VIPサブスクの課金・自動更新はすべてApp Store内で完了します。本アプリは決済処理に介入できず、カード番号、支払いパスワード、Apple IDなどの決済プライバシー情報を収集・保存しません。</p>
+
+        <h3>サブスクは端末に紐付け</h3>
+        <p>VIP特典はAppleの取引IDを通じて現在の端末に紐付けられます。アプリ再インストールや機種変更後はApple IDから購入情報の復元が必要です。本アプリに個人アカウントシステムはなく、複数端末間でサブスク状態を同期できません。</p>
+
+        <h3>自動更新の管理方法</h3>
+        <p>サブスクの自動更新はAppleアカウントで独立管理されます。「iPhone 設定 > Apple ID > サブスクリプション」からいつでも自動更新をオフにできます。オフ後は期間満了時に課金されません。</p>
+
+        <h3>サブスクデータの削除</h3>
+        <p>アプリをアンインストールするとローカルに保存されたサブスク証明は完全削除され、復元不可能となります。</p>
+
+        <!-- 5. 必要なシステム権限 -->
+        <h2>5. 必要なシステム権限について</h2>
+
+        <p>すべての権限は核心管理機能に必須です。権限をオフにすると該当機能が利用不可になります。</p>
+
+        <h3>1. スクリーンタイム権限（FamilyControls）</h3>
+        <p><strong>目的：</strong>アプリの匿名識別子を取得し、アプリ非表示・時間指定ロック・利用時間制限を実現。アプリ内部のコンテンツを読み取ることはできません。</p>
+
+        <h3>2. 通知権限</h3>
+        <p><strong>目的：</strong>ルール適用通知、利用時間上限到達アラート。システム設定からいつでも無効化可能。</p>
+
+        <h3>3. アイコン変更権限（Alternate Icon API）</h3>
+        <p><strong>目的：</strong>ユーザーの手動選択後、iOS公式APIを通じて本アプリのアイコンを変更。他のアプリに影響を与えません。設定から標準アイコンに戻せます。</p>
+
+        <!-- 6. お客様の法定プライバシー権利 -->
+        <h2>6. お客様の法定プライバシー権利</h2>
+
+        <p>『個人情報保護法』、CCPA、GDPRなどの法令に基づき、以下の権利を保有します。</p>
+
+        <ul>
+            <li><strong>知る権利：</strong>本プライバシーポリシーからデータ処理ルールをいつでも確認可能；</li>
+            <li><strong>削除権：</strong>アプリ内でグループ設定を消去可能。アンインストールですべてのローカルデータを完全削除；</li>
+            <li><strong>同意撤回権：</strong>iPhone設定から任意の権限をオフにし、データ取得を停止；</li>
+            <li><strong>問い合わせ権：</strong>文末の連絡先よりデータ関連の質問が可能。</li>
+        </ul>
+
+        <p>本アプリに登録・ログイン機能はなく、アカウント削除手続きは存在しません。</p>
+
+        <!-- 7. データ共有・第三者に関する記載 -->
+        <h2>7. データ共有・第三者について</h2>
+
+        <ul>
+            <li>独自クラウドサーバーがないため、ユーザーデータを外部送信する経路はなし；</li>
+            <li>広告会社・分析企業・第三者プラットフォームにローカル設定データを販売・交換・貸し出すことは一切なし；</li>
+            <li>サブスク決済はApple App Storeのみで処理。Appleのデータ取り扱いはAppleプライバシーポリシーに従い、本アプリのデータシステムと完全分離；</li>
+            <li>分析・広告・プッシュ・トラッキング・決済系の第三者SDKを未導入。第三者が端末データを取得する手段はなし。</li>
+        </ul>
+
+        <!-- 8. 未成年者の情報保護 -->
+        <h2>8. 未成年者の情報保護</h2>
+
+        <p>本アプリは全年齢向けで、未成年者の個人情報を能動的に収集しません。保護者が未成年の端末管理に使用する場合、すべての設定は保護者の端末内のみ保存され、クラウドへアップロードされません。未成年者は保護者と一緒に本ポリシーを全文読んでからご利用ください。</p>
+
+        <!-- 9. 紛争解決 -->
+        <h2>9. 紛争解決について</h2>
+
+        <p>本プライバシーポリシーまたはアプリ利用による紛争は、まず友好的な協議で解決を図ります。協議が成立しない場合、いずれの当事者も本アプリ運営元の所在地を管轄する裁判所に提訴可能です。</p>
+
+        <!-- 10. プライバシーポリシーの更新 -->
+        <h2>10. プライバシーポリシーの更新</h2>
+
+        <p>国内法令の改正、App Store審査基準の更新、機能追加などに伴い本ポリシーを改訂する場合があります。更新後はアプリ内ポップアップで通知し、アプリを継続利用した時点で改定版に同意したものとみなします。最新版はApp Store商品ページにも掲載されます。</p>
+
+        <!-- 11. お問い合わせ -->
+        <h2>11. お問い合わせ</h2>
+
+        <div class="contact">
+            <p>本プライバシーポリシー、ローカルデータ処理、サブスクリプションに関するご質問は下記よりご連絡ください。</p>
+            <p style="margin-top:8px;"><strong>📧 メール：</strong> yong_bin123@126.com</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <p style="text-align:center;font-size:13px;color:#86868b;">
+            Cloak · ローカル処理優先 · プライバシー最優先
+        </p>
+
+    </div>
+
+</body>
+</html>

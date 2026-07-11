@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutzungsbedingungen · Cloak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 48px 56px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .update-date {
+            text-align: center;
+            color: #86868b;
+            font-size: 15px;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f2;
+            letter-spacing: -0.3px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            letter-spacing: -0.2px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 14px;
+        }
+
+        ul li {
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: #1d1d1f;
+            list-style-type: disc;
+        }
+
+        ul li ul {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            padding-left: 20px;
+        }
+
+        ul li ul li {
+            list-style-type: circle;
+            font-size: 14px;
+        }
+
+        .highlight-box {
+            background: #f8f8fa;
+            border-left: 4px solid #7469f5;
+            padding: 14px 20px;
+            margin: 16px 0;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #1d1d1f;
+        }
+
+        .highlight-box strong {
+            color: #7469f5;
+        }
+
+        .tag-free {
+            display: inline-block;
+            background: #e5e5ea;
+            color: #1d1d1f;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-right: 4px;
+        }
+
+        .tag-vip {
+            display: inline-block;
+            background: #7469f5;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-right: 4px;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e5ea;
+            margin: 32px 0;
+        }
+
+        .contact-box {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+
+        .contact-box p {
+            margin-bottom: 4px;
+        }
+
+        .toc {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 16px 24px;
+            margin-bottom: 24px;
+        }
+
+        .toc p {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #86868b;
+        }
+
+        .toc a {
+            display: inline-block;
+            color: #7469f5;
+            text-decoration: none;
+            font-size: 14px;
+            margin-right: 16px;
+            margin-bottom: 4px;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 20px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            ul li {
+                font-size: 14px;
+            }
+
+            .highlight-box {
+                padding: 12px 16px;
+                font-size: 14px;
+            }
+
+            .contact-box {
+                padding: 16px 18px;
+            }
+
+            .toc a {
+                display: block;
+                margin-right: 0;
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 40px 48px;
+            }
+            .toc {
+                background: #f5f5f7;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- 1. Dienstübersicht -->
+        <h2 id="sec1">1. Dienstübersicht</h2>
+
+        <p>Die App Cloak (im Folgenden „die App“) ist ein lokales iOS-Verwaltungstool, das auf den offiziellen Apple-Frameworks FamilyControls, DeviceActivity und ManagedSettings basiert. Es bietet lokale Funktionen wie das Ausblenden von Apps, zeitgesteuertes Sperren, tägliche Nutzungszeitlimits, App-Symbol-Tarnung, Gruppenverwaltung sowie die Freigabe aller Funktionen per VIP-Bezahlabo. Alle Steuerungslogiken laufen ausschließlich lokal auf Ihrem Gerät; es gibt keine Cloud-Fernüberwachung oder Fernsteuerung.</p>
+
+        <p>Die App unterteilt sich in eine kostenlose Version und eine VIP-Version:</p>
+        <ul>
+            <li><span class="tag-free">Kostenlos</span>: Es darf nur eine Gruppe erstellt werden, pro Gruppe können maximal 5 Apps hinzugefügt werden;</li>
+            <li><span class="tag-vip">VIP</span>: Alle oben genannten Mengenbeschränkungen werden aufgehoben, sämtliche Funktionen freigeschaltet.</li>
+        </ul>
+
+        <p>Das VIP-Abo wird über In-App-Käufe im offiziellen App Store abgeschlossen.</p>
+
+        <div class="highlight-box">
+            <strong>📌 Wichtiger Hinweis:</strong> Durch Herunterladen, Installieren, Öffnen oder Verwenden der App bestätigen Sie, dass Sie diese Nutzungsbedingungen vollständig gelesen, verstanden und freiwillig akzeptiert haben. Sollten Sie mit einer beliebigen Klausel nicht einverstanden sein, deinstallieren Sie die App unverzüglich und stellen jegliche Nutzung ein.
+        </div>
+
+        <!-- 2. Gerätenutzungsregeln -->
+        <h2 id="sec2">2. Gerätenutzungsregeln</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">Sie dürfen die App nur auf iPhone- und iPad-Geräten verwenden, die Ihnen rechtmäßig gehören und über deren Nutzung Sie uneingeschränkt verfügen.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Es ist streng verboten, ohne Zustimmung des Gerätebesitzes Steuerfunktionen zu installieren und zu aktivieren sowie die Nutzung fremder Handys unrechtmäßig einzuschränken oder zu überwachen. Sämtliche zivil-, verwaltungs- und strafrechtlichen Folgen tragen allein Sie als Nutzer.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Die Nutzung zur Umgehung von Geräteregeln in Betrieben und Schulen sowie zum Aushebeln von Systemkontrollen oder böswilligem Ändern von Systemeinstellungen ist untersagt.</li>
+        </ol>
+
+        <!-- 3. Verbotene Handlungen -->
+        <h2 id="sec3">3. Verbotene Handlungen</h2>
+
+        <p>Bei Nutzung der App verpflichten Sie sich, folgende Handlungen zu unterlassen:</p>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:;">Die App dekompilieren, rückentwickeln, Installationspakete manipulieren, Abos knacken, Raubkopien erstellen und verteilen oder neu verpacken und veröffentlichen;</li>
+            <li style="margin-bottom:8px;font-size:15px;">App-Schwachstellen ausnutzen, um massenhaft System-App-Kennungen auszulesen, Systemrechte missbräuchlich zu belegen oder den Gerätebetrieb zu stören;</li>
+            <li style="margin-bottom:8px;font-size:15px;">Die App für Online-Betrug, das Ausspähen fremder Privatsphäre oder böswilliges Einschränken fremder Geräte nutzen;</li>
+            <li style="margin-bottom:8px;font-size:15px;">Ihre Aborechte auf Geräte übertragen, die Ihnen nicht gehören, oder Aborechte an Dritte verkaufen oder vermieten.</li>
+        </ol>
+
+        <div class="highlight-box">
+            <strong>⚠️ Maßnahmen bei Verstoß:</strong> Bei schwerwiegenden Verstößen behält sich der Entwickler das Recht vor, die Dienstleistung einzustellen. Bereits gezahlte Abogebühren werden nicht erstattet. Der Entwickler behält sich sämtliche Rechtswege vor.
+        </div>
+
+        <!-- 4. Regeln zum VIP-Abo -->
+        <h2 id="sec4">4. Regeln zum VIP-Abo</h2>
+
+        <h3>1. Abbuchung und Laufzeit</h3>
+        <p>Die Abolaufzeit ergibt sich aus der Anzeige im App Store-Kaufbereich. Die Gebühren werden automatisch von Ihrem verknüpften Apple-Konto abgebucht. Die automatische Verlängerung wird bis 24 Stunden vor Ablauf der Laufzeit abgebucht.</p>
+
+        <h3>2. Verwaltung automatischer Verlängerung</h3>
+        <p>Sie können die automatische Verlängerung jederzeit unter „iPhone-Einstellungen > Apple ID > Abonnements“ deaktivieren. Nach Deaktivierung erfolgt keine weitere Abbuchung bei Ablauf.</p>
+
+        <h3>3. Hinweis zu Aborechten</h3>
+        <p>Für die App ist keine Registrierung erforderlich. Die VIP-Rechte werden über Ihre Apple ID identifiziert. Die Aborechte sind an die beim Kauf verwendete Apple ID gebunden und können auf allen Geräten wiederhergestellt werden, die mit derselben ID angemeldet sind. Eine Übertragung oder Weitergabe an fremde Apple IDs ist nicht zulässig.</p>
+
+        <h3>4. Erstattungsregeln</h3>
+        <p>Sämtliche Abbuchungs- und Erstattungsverfahren werden ausschließlich von Apple geprüft und abgewickelt. Der Entwickler hat keine Befugnis zur Bearbeitung von Erstattungsanfragen. Wenden Sie sich bei Erstattungswünschen direkt an den Apple-Support.</p>
+
+        <h3>5. Haftungsausschluss bei Systemanpassungen</h3>
+        <p>Sollten größere iOS-Versionsupdates oder Änderungen der offiziellen Apple-Framework-Schnittstellen vorübergehend den Ausfall einzelner Funktionen verursachen, wird der Entwickler schnellstmöglich eine Anpassung vornehmen. Sollte Apple entsprechende Schnittstellen dauerhaft abschalten und damit Kernfunktionen nicht mehr bereitstellbar sein, erstattet der Entwickler die Abogebühren anteilig für die verbleibende Laufzeit oder bietet eine angemessene Alternative an. Der Nutzer kann frei wählen, ob er die App weiter nutzt oder über Apple eine Erstattung beantragt.</p>
+
+        <h3>6. Hinweis zu Abodaten</h3>
+        <p>Anonyme Transaktionsnachweise aus dem Abo werden nur lokal zur Rechteprüfung verwendet und nicht in die Cloud hochgeladen. Einzelheiten entnehmen Sie bitte der <a href="#" style="color:#7469f5;text-decoration:none;">Datenschutzrichtlinie</a>.</p>
+
+        <!-- 5. Haftungsausschluss des Dienstes -->
+        <h2 id="sec5">5. Haftungsausschluss des Dienstes</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">Die Steuerungsfunktionen basieren auf offiziellen iOS-Systemframeworks. Sollte Apple entsprechende Schnittstellen abschalten oder einschränken, können einzelne oder alle Funktionen ausfallen. Der Entwickler bemüht sich um Anpassungen, haftet jedoch nicht für direkte oder indirekte Schäden daraus.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Bei Systemfehlern, veralteten Systemversionen, deaktivierten Systemrechten oder Gerätezurücksetzungen, die zum Ausfall von Regeln oder Datenverlust führen, übernimmt der Entwickler keine Ausgleichs- oder Erstattungsverpflichtung.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Die App stellt lediglich ein Werkzeug zur Verfügung. Aufgrund der Systemframework-Beschränkungen können einzelne Systemapps und Systemkomponenten nicht gesteuert werden – dies stellt eine normale Systembegrenzung dar.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Der Entwickler garantiert keine fehlerfreie und unterbrechungsfreie dauerhafte Verfügbarkeit, pflegt und optimiert den Dienst laufend, übernimmt aber keine Garantie für das völlige Fehlen von Programmfehlern.</li>
+        </ol>
+
+        <!-- 6. Verarbeitung von Nutzerdaten -->
+        <h2 id="sec6">6. Verarbeitung von Nutzerdaten</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">Alle Konfigurationsdaten der App werden ausschließlich lokal in der Geräte-Sandbox gespeichert und nicht in die Cloud hochgeladen. Bei Deinstallation der App werden sämtliche Daten automatisch gelöscht. Speicher- und Rechtebestimmungen siehe <a href="#" style="color:#7469f5;text-decoration:none;">Datenschutzrichtlinie</a>.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Sie sind selbst dafür verantwortlich, Ihr Gerät sicher zu verwahren. Bei Geräteverlust oder Weitergabe mit daraus resultierenden manipulierten Regeln oder Datenleckagen tragen allein Sie die Verantwortung.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Sollte der Entwickler den Betrieb der App einstellen, erfolgt eine Vorankündigung von 60 Tagen innerhalb der App. Bestehende Abonnements können bis zum Ablauf der Laufzeit uneingeschränkt genutzt werden, eine automatische Verlängerung entfällt danach.</li>
+        </ol>
+
+        <!-- 7. Nutzung durch Minderjährige -->
+        <h2 id="sec7">7. Nutzung durch Minderjährige</h2>
+
+        <p>Bevor Minderjährige die App nutzen, müssen deren Erziehungsberechtigte diese Nutzungsbedingungen vollständig lesen und allen Regelungen zustimmen. Erwachsene sollten die Gerätenutzung von Minderjährigen angemessen leiten. Die Zeitsteuerung dient lediglich als Hilfswerkzeug; der Entwickler übernimmt keine Aufsichtspflicht über das Nutzungsverhalten von Minderjährigen.</p>
+
+        <!-- 8. Aktualisierung der Bedingungen -->
+        <h2 id="sec8">8. Aktualisierung der Bedingungen</h2>
+
+        <p>Der Entwickler behält sich das Recht vor, diese Nutzungsbedingungen aufgrund geänderter Gesetze, App Store-Regeln oder Produktweiterentwicklungen anzupassen. Nach Aktualisierung erscheint ein Hinweisfenster in der App. Die weitere Nutzung gilt als Zustimmung zur neuen Fassung. Die aktuelle Version wird gleichzeitig auf der App Store-Produktseite und der öffentlichen Webseite veröffentlicht.</p>
+
+        <!-- 9. Streitbeilegung -->
+        <h2 id="sec9">9. Streitbeilegung</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">Für das Zustandekommen, die Erfüllung, Auslegung und sämtliche Streitigkeiten dieser Bedingungen gilt das Recht der Volksrepublik China.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Alle Streitigkeiten aus diesen Bedingungen oder der App-Nutzung sind zunächst gütlich zu klären. Sollte eine Einigung nicht möglich sein, kann jede Partei den Rechtsstreit vor das zuständige Gericht am Sitz des Entwicklers bringen.</li>
+        </ol>
+
+        <!-- 10. Salvatorische Klausel -->
+        <h2 id="sec10">10. Salvatorische Klausel</h2>
+
+        <p>Sollte eine einzelne Klausel dieser Bedingungen unwirksam oder undurchführbar sein, bleibt die Wirksamkeit der übrigen Klauseln unberührt.</p>
+
+        <!-- 11. Kontaktmöglichkeiten -->
+        <h2 id="sec11">11. Kontaktmöglichkeiten</h2>
+
+        <div class="contact-box">
+            <p>Bei Fragen zu Dienst oder Abonnements wenden Sie sich an den Entwickler über folgenden Weg:</p>
+            <p style="margin-top:8px;"><strong>📧 E-Mail:</strong> yong_bin123@126.com</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <p style="text-align:center;font-size:13px;color:#86868b;">
+            Cloak · Lokal zuerst · Datenschutz im Fokus
+        </p>
+
+    </div>
+
+</body>
+</html>
