@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Điều khoản Dịch vụ · Cloak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 48px 56px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .update-date {
+            text-align: center;
+            color: #86868b;
+            font-size: 15px;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f2;
+            letter-spacing: -0.3px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            letter-spacing: -0.2px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 14px;
+        }
+
+        ul li {
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: #1d1d1f;
+            list-style-type: disc;
+        }
+
+        ul li ul {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            padding-left: 20px;
+        }
+
+        ul li ul li {
+            list-style-type: circle;
+            font-size: 14px;
+        }
+
+        .highlight-box {
+            background: #f8f8fa;
+            border-left: 4px solid #7469f5;
+            padding: 14px 20px;
+            margin: 16px 0;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #1d1d1f;
+        }
+
+        .highlight-box strong {
+            color: #7469f5;
+        }
+
+        .tag-free {
+            display: inline-block;
+            background: #e5e5ea;
+            color: #1d1d1f;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-right: 4px;
+        }
+
+        .tag-vip {
+            display: inline-block;
+            background: #7469f5;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-right: 4px;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e5ea;
+            margin: 32px 0;
+        }
+
+        .contact-box {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+
+        .contact-box p {
+            margin-bottom: 4px;
+        }
+
+        .toc {
+            background: #f8f8fa;
+            border-radius: 12px;
+            padding: 16px 24px;
+            margin-bottom: 24px;
+        }
+
+        .toc p {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #86868b;
+        }
+
+        .toc a {
+            display: inline-block;
+            color: #7469f5;
+            text-decoration: none;
+            font-size: 14px;
+            margin-right: 16px;
+            margin-bottom: 4px;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 20px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            ul li {
+                font-size: 14px;
+            }
+
+            .highlight-box {
+                padding: 12px 16px;
+                font-size: 14px;
+            }
+
+            .contact-box {
+                padding: 16px 18px;
+            }
+
+            .toc a {
+                display: block;
+                margin-right: 0;
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 40px 48px;
+            }
+            .toc {
+                background: #f5f5f7;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- ====== MỤC 1: TỔNG QUAN DỊCH VỤ ====== -->
+        <h2 id="sec1">Mục 1: Tổng quan dịch vụ</h2>
+
+        <p>Ứng dụng Cloak (gọi tắt là “Ứng dụng”) là công cụ quản lý ứng dụng iOS cục bộ, được phát triển dựa trên khung FamilyControls, DeviceActivity, ManagedSettings của Apple. Ứng dụng cung cấp các dịch vụ cục bộ bao gồm ẩn ứng dụng, khóa theo thời gian, giới hạn thời gian sử dụng, thay đổi biểu tượng màn hình chính, quản lý nhóm và gói VIP trả phí mở khóa toàn bộ chức năng. Tất cả logic quản lý chỉ chạy cục bộ trên thiết bị của bạn, không có chức năng giám sát hay điều khiển từ xa qua máy chủ đám mây.</p>
+
+        <p>Ứng dụng có phiên bản miễn phí và phiên bản đăng ký VIP:</p>
+        <ul>
+            <li><span class="tag-free">Miễn phí</span> giới hạn tạo 1 nhóm, mỗi nhóm chỉ thêm tối đa 5 ứng dụng;</li>
+            <li><span class="tag-vip">VIP</span> bỏ toàn bộ giới hạn số lượng trên, mở khóa đầy đủ chức năng.</li>
+        </ul>
+
+        <p>Gói đăng ký VIP được thực hiện thông qua mua trong ứng dụng chính thức của App Store.</p>
+
+        <div class="highlight-box">
+            <strong>📌 Lưu ý quan trọng:</strong> Việc bạn tải, cài đặt, mở và sử dụng Ứng dụng đồng nghĩa với việc bạn đã đọc kỹ, hiểu rõ và tự nguyện đồng ý toàn bộ nội dung điều khoản dịch vụ này. Nếu bạn không chấp nhận bất kỳ điều khoản nào, vui lòng gỡ bỏ Ứng dụng ngay lập tức và ngừng sử dụng.
+        </div>
+
+        <!-- ====== MỤC 2: QUY TẮC SỬ DỤNG THIẾT BỊ ====== -->
+        <h2 id="sec2">Mục 2: Quy tắc sử dụng thiết bị</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">Bạn chỉ được sử dụng Ứng dụng trên iPhone, iPad do bạn sở hữu hợp pháp và có toàn quyền sử dụng.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Nghiêm cấm tự ý cài đặt, bật chức năng quản lý trên thiết bị khi chưa có sự đồng ý của chủ sở hữu thiết bị, cũng như hạn chế hoặc giám sát việc sử dụng điện thoại của người khác một cách trái phép. Bạn sẽ tự chịu toàn bộ trách nhiệm dân sự, hành chính và hình pháp phát sinh từ hành vi này.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Cấm sử dụng Ứng dụng để né quy định quản lý thiết bị của cơ quan, trường học, doanh nghiệp; cấm dùng để bẻ khóa quản lý hệ thống, chỉnh sửa cài đặt hệ thống với mục đích xấu.</li>
+        </ol>
+
+        <!-- ====== MỤC 3: HÀNH VI BỊ CẤM ====== -->
+        <h2 id="sec3">Mục 3: Hành vi bị cấm</h2>
+
+        <p>Khi sử dụng Ứng dụng, bạn cam kết không thực hiện các hành vi sau:</p>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">Dịch ngược, giải mã ngược, chỉnh sửa gói cài đặt, bẻ khóa đăng ký, sao chép phân phối bản lậu, đóng gói lại để phát hành Ứng dụng;</li>
+            <li style="margin-bottom:8px;font-size:15px;">Tận dụng lỗ hổng của Ứng dụng để thu thập hàng loạt mã định danh ứng dụng hệ thống, chiếm dụng quyền hệ thống một cách xấu, làm gián đoạn hoạt động bình thường của thiết bị;</li>
+            <li style="margin-bottom:8px;font-size:15px;">Sử dụng Ứng dụng để thực hiện lừa đảo mạng, đánh cắp thông tin cá nhân, hạn chế thiết bị của người khác một cách trái pháp luật;</li>
+            <li style="margin-bottom:8px;font-size:15px;">Cung cấp quyền đăng ký của bạn cho thiết bị không thuộc sở hữu của bản thân, hoặc bán, cho thuê quyền đăng ký cho người khác.</li>
+        </ol>
+
+        <div class="highlight-box">
+            <strong>⚠️ Xử lý vi phạm:</strong> Nếu bạn thực hiện các hành vi vi phạm nghiêm trọng nêu trên, nhà phát triển có quyền ngừng cung cấp dịch vụ Ứng dụng cho bạn, phí đăng ký đã thanh toán sẽ không được hoàn lại. Nhà phát triển bảo lưu quyền truy cứu trách nhiệm pháp lý.</div>
+
+        <!-- ====== MỤC 4: QUY TẮC LIÊN QUAN ĐẾN GÓI VIP ====== -->
+        <h2 id="sec4">Mục 4: Quy tắc liên quan đến gói đăng ký VIP</h2>
+
+        <h3>1. Trừ phí và chu kỳ đăng ký</h3>
+        <p>Chu kỳ đăng ký được hiển thị trên trang mua trong ứng dụng của App Store, phí sẽ tự động trừ từ tài khoản Apple bạn đã liên kết. Việc tự động gia hạn sẽ được kích hoạt trong vòng 24 giờ trước khi gói hết hạn.</p>
+
+        <h3>2. Quản lý tự động gia hạn</h3>
+        <p>Bạn có thể tắt tự động gia hạn bất cứ lúc nào tại: Cài đặt iPhone > Apple ID > Đăng ký. Sau khi tắt, sẽ không bị trừ phí khi gói hết hạn.</p>
+
+        <h3>3. Giải thích quyền lợi đăng ký</h3>
+        <p>Ứng dụng không yêu cầu đăng nhập tài khoản, quyền lợi VIP được nhận diện thông qua Apple ID. Quyền lợi VIP được liên kết với Apple ID bạn dùng để mua. Nhiều thiết bị đăng nhập cùng một Apple ID đều có thể khôi phục quyền lợi đăng ký, nhưng không được chuyển nhượng cho Apple ID khác hay chia sẻ với người khác.</p>
+
+        <h3>4. Quy tắc hoàn tiền</h3>
+        <p>Tất cả quy trình trừ phí và hoàn tiền được xem xét và xử lý độc lập bởi Apple. Nhà phát triển không có quyền can thiệp vào việc hoàn tiền. Nếu có nhu cầu hoàn tiền, vui lòng liên hệ trực tiếp bộ phận hỗ trợ của Apple.</p>
+
+        <h3>5. Miễn trừ trách nhiệm về tương thích hệ thống</h3>
+        <p>Nếu việc cập nhật phiên bản lớn iOS hoặc thay đổi giao diện khung quản lý chính thức của Apple khiến một số chức năng tạm thời không hoạt động hoặc bị hạn chế, nhà phát triển sẽ cố gắng cập nhật để sửa lỗi. Nếu Apple vĩnh viễn đóng các giao diện liên quan làm chức năng cốt lõi không thể tiếp tục cung cấp, nhà phát triển sẽ hoàn trả phí cho người dùng theo tỷ lệ thời gian đăng ký còn lại hoặc đưa ra phương án bồi thường hợp lý khác. Người dùng có thể tự chọn tiếp tục sử dụng hoặc yêu cầu hoàn tiền thông qua kênh chính thức của Apple.</p>
+
+        <h3>6. Giải thích dữ liệu đăng ký</h3>
+        <p>Chứng từ giao dịch ẩn danh tạo ra từ đăng ký chỉ dùng để kiểm tra quyền lợi cục bộ, không tải lên đám mây, xem chi tiết tại <a href="#" style="color:#7469f5;text-decoration:none;">Chính sách Bảo mật</a>.</p>
+
+        <!-- ====== MỤC 5: MIỄN TRỪ TRÁCH NHIỆM DỊCH VỤ ====== -->
+        <h2 id="sec5">Mục 5: Miễn trừ trách nhiệm dịch vụ</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">Ứng dụng dựa trên khung hệ thống chính thức của iOS để cung cấp khả năng quản lý. Nếu Apple đóng hoặc hạn chế giao diện liên quan, một phần hoặc toàn bộ chức năng quản lý có thể không hoạt động. Nhà phát triển sẽ cố gắng thích ứng nhưng không chịu trách nhiệm cho các thiệt hại trực tiếp hay gián tiếp phát sinh.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Nhà phát triển không chịu trách nhiệm bồi thường nếu quy tắc quản lý không hiệu lực hoặc dữ liệu bị mất do lỗi hệ thống thiết bị, phiên bản hệ thống quá thấp, quyền hệ thống bị tắt, khôi phục cài đặt gốc thiết bị và các yếu tố tương tự.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Ứng dụng chỉ cung cấp công cụ, do giới hạn của khung hệ thống, một số ứng dụng hệ thống và thành phần hệ thống không thể được đưa vào quản lý, đây là giới hạn cơ chế bình thường.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Nhà phát triển không đảm bảo dịch vụ hoạt động liên tục, không có lỗi vĩnh viễn. Chúng tôi sẽ cố gắng bảo trì, nâng cấp và tối ưu nhưng không cam kết không có bất kỳ lỗi nào.</li>
+        </ol>
+
+        <!-- ====== MỤC 6: XỬ LÝ DỮ LIỆU NGƯỜI DÙNG ====== -->
+        <h2 id="sec6">Mục 6: Xử lý dữ liệu người dùng</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">Tất cả dữ liệu cấu hình của Ứng dụng chỉ được lưu trữ trong hộp cát cục bộ của thiết bị, không tải lên đám mây. Khi gỡ bỏ Ứng dụng, toàn bộ dữ liệu cấu hình sẽ bị xóa tự động. Xem quy tắc lưu trữ và quyền liên quan tại <a href="#" style="color:#7469f5;text-decoration:none;">Chính sách Bảo mật</a>.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Người dùng tự chịu trách nhiệm bảo quản thiết bị. Nếu thiết bị bị mất, cho mượn dẫn đến cấu hình quản lý bị thay đổi hoặc dữ liệu bị rò rỉ, người dùng tự chịu trách nhiệm.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Nếu nhà phát triển quyết định ngừng vận hành Ứng dụng, sẽ thông báo trong Ứng dụng trước 60 ngày. Người dùng đã đăng ký vẫn có thể sử dụng bình thường trong thời gian đăng ký còn lại, không tự động gia hạn khi hết hạn.</li>
+        </ol>
+
+        <!-- ====== MỤC 7: TRẺ EM SỬ DỤNG ====== -->
+        <h2 id="sec7">Mục 7: Trẻ em sử dụng</h2>
+
+        <p>Trước khi trẻ em sử dụng Ứng dụng, người giám hộ cần đọc kỹ toàn bộ điều khoản dịch vụ và đồng ý với các ràng buộc. Người giám hộ nên hướng dẫn trẻ sử dụng thiết bị một cách hợp lý. Chức năng giới hạn thời gian của Ứng dụng chỉ là công cụ hỗ trợ, nhà phát triển không chịu trách nhiệm giám sát hành vi sử dụng của trẻ.</p>
+
+        <!-- ====== MỤC 8: CẬP NHẬT ĐIỀU KHOẢN ====== -->
+        <h2 id="sec8">Mục 8: Cập nhật điều khoản</h2>
+
+        <p>Nhà phát triển có quyền cập nhật điều khoản dịch vụ khi có thay đổi luật pháp, quy tắc nền tảng Apple hoặc điều chỉnh chức năng sản phẩm. Sau khi cập nhật, Ứng dụng sẽ hiển thị cửa sổ thông báo. Việc bạn tiếp tục sử dụng Ứng dụng được xem là chấp nhận toàn bộ điều khoản đã cập nhật. Phiên bản mới nhất cũng được đăng trên trang sản phẩm App Store và trang web công khai.</p>
+
+        <!-- ====== MỤC 9: GIẢI QUYẾT TRANH CHẤP ====== -->
+        <h2 id="sec9">Mục 9: Giải quyết tranh chấp</h2>
+
+        <ol style="padding-left:24px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;font-size:15px;">Việc lập, thực hiện, diễn giải điều khoản và giải quyết tranh chấp tuân theo luật pháp nước Cộng hòa Nhân dân Trung Hoa.</li>
+            <li style="margin-bottom:8px;font-size:15px;">Bất kỳ tranh chấp nào phát sinh từ điều khoản này hoặc việc sử dụng Ứng dụng sẽ được hai bên giải quyết thông qua thương lượng thân thiện trước. Nếu không thương lượng được, bất kỳ bên nào cũng có thể đưa tranh chấp ra tòa án có thẩm quyền tại nơi cư trú của nhà phát triển để giải quyết theo quy định.</li>
+        </ol>
+
+        <!-- ====== MỤC 10: TÍCH PHÂN CỦA ĐIỀU KHOẢN ====== -->
+        <h2 id="sec10">Mục 10: Tích phân của điều khoản</h2>
+
+        <p>Nếu bất kỳ điều khoản nào trong tài liệu này bị xác định là vô hiệu hoặc không thể thi hành, điều đó không ảnh hưởng đến hiệu lực của các điều khoản còn lại.</p>
+
+        <!-- ====== MỤC 11: KÊNH LIÊN HỆ ====== -->
+        <h2 id="sec11">Mục 11: Kênh liên hệ</h2>
+
+        <div class="contact-box">
+            <p>Nếu có câu hỏi liên quan đến dịch vụ hoặc gói đăng ký, bạn có thể liên hệ nhà phát triển qua:</p>
+            <p style="margin-top:8px;"><strong>📧 Email:</strong> yong_bin123@126.com</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <p style="text-align:center;font-size:13px;color:#86868b;">
+            Cloak · Ưu tiên cục bộ · Bảo mật là trên hết
+        </p>
+
+    </div>
+
+</body>
+</html>
